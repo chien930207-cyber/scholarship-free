@@ -131,6 +131,34 @@ jobs:
                   stream.write("This prepares the Actions workspace only. It does not delete files, commit changes, or read repository Secrets.\n\n")
           PY
 
+      - name: Fix Cloudflare dispatch compatibility
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("worker/index.mjs")
+          text = path.read_text(encoding="utf-8")
+          old = "redirect:'error'"
+          new = "redirect:'manual'"
+
+          if text.count(old) == 1:
+              text = text.replace(old, new, 1)
+              path.write_text(text, encoding="utf-8")
+              print("FIXED: Cloudflare-compatible GitHub request.")
+          elif old not in text and new in text:
+              print("OK: compatibility fix is already present.")
+          else:
+              raise SystemExit(
+                  "Unexpected worker code. Stopped instead of changing unrelated code."
+              )
+
+          if "ok:r.status===204" not in text:
+              raise SystemExit(
+                  "Expected GitHub response check missing. Deployment stopped."
+              )
+          print("Redirects remain blocked; only the expected success response is accepted.")
+          PY
+
       - name: Check secret names without printing values
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -140,12 +168,24 @@ jobs:
         run: |
           python - <<'PY'
           import os, sys
-          names = ['CLOUDFLARE_ACCOUNT_ID', 'CLOUDFLARE_API_TOKEN', 'TAVILY_API_KEY', 'GH_DISPATCH_TOKEN']
-          missing = [name for name in names if not os.getenv(name, '').strip()]
+
+          names = [
+              'CLOUDFLARE_ACCOUNT_ID',
+              'CLOUDFLARE_API_TOKEN',
+              'TAVILY_API_KEY',
+              'GH_DISPATCH_TOKEN'
+          ]
+          missing = [
+              name for name in names
+              if not os.getenv(name, '').strip()
+          ]
+
           for name in missing:
               print('::error::Missing repository Secret: ' + name)
+
           if missing:
               sys.exit(1)
+
           print('All four required Secrets are set. Values are not displayed.')
           PY
 
@@ -183,9 +223,13 @@ jobs:
           python - <<'PY'
           import os
           from pathlib import Path
+
           p = Path(os.environ['GITHUB_STEP_SUMMARY'])
           text = p.read_text()
-          text = text.replace('Actions -> Collect and verify', 'Actions -> Website - Deploy and Update')
+          text = text.replace(
+              'Actions -> Collect and verify',
+              'Actions -> Website - Deploy and Update'
+          )
           p.write_text(text)
           PY
 
