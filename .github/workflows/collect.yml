@@ -1,1 +1,199 @@
+name: Website - Deploy and Update
 
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'First run: deploy. Then verify. daily updates now; queue handles user searches.'
+        type: choice
+        required: true
+        default: deploy
+        options:
+          - deploy
+          - verify
+          - daily
+          - queue
+  schedule:
+    - cron: '0 4 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scholarship-data-writer
+  cancel-in-progress: false
+
+jobs:
+  website:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_REPOSITORY_VISIBILITY: public
+      JOB_MODE: ${{ inputs.mode || 'scheduled' }}
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - name: Get uploaded files
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Restore folder layout in the build workspace
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, os, shutil, sys
+
+          root = Path.cwd().resolve()
+          expected = [
+              "requirements.txt",
+              "package.json",
+              "worker/index.mjs",
+              "worker/config.template.json",
+              "worker/schema.sql",
+              "scripts/cloud.py",
+              "scripts/runner.py",
+              "scripts/deploy.py",
+              "scripts/model.py",
+              "scripts/net.py",
+              "scripts/parse_attachment.py",
+              "tests/worker.test.mjs",
+              "tests/compiled-fixture.json",
+              "tests/test_pipeline.py",
+              "web/index.html",
+              "web/schools.html",
+              "web/check.html",
+              "web/help.html",
+              "web/data/base-status.json",
+              "web/data/catalog.json",
+              "web/data/crawl-status.json",
+              "web/data/schools.json",
+              "web/data/queue.json",
+              "web/data/sources.json",
+              "web/data/discovered.json",
+              "web/data/daily-status.json",
+              "web/data/school-cache.json",
+              "web/data/library.json"
+          ]
+          problems = []
+          planned = []
+          for relative in expected:
+              target = root / relative
+              flat = root / Path(relative).name
+              unsafe = False
+              for candidate in {target, flat}:
+                  if not candidate.resolve().is_relative_to(root) or candidate.is_symlink() or (candidate.exists() and not candidate.is_file()):
+                      problems.append("UNSAFE_PATH: " + relative)
+                      unsafe = True
+              if unsafe:
+                  continue
+              if target.is_file():
+                  source = target
+                  if flat != target and flat.is_file() and flat.read_bytes() != target.read_bytes():
+                      problems.append("LAYOUT_CONFLICT: " + relative + " differs from " + flat.name)
+              elif flat.is_file():
+                  source = flat
+                  planned.append((flat, target))
+              else:
+                  problems.append("MISSING_FILE: " + relative + " (also checked root file " + flat.name + ")")
+                  continue
+              if relative.endswith('.json'):
+                  try:
+                      json.loads(source.read_text(encoding='utf-8-sig'))
+                  except (ValueError, UnicodeError, OSError):
+                      problems.append("INVALID_JSON: " + relative)
+
+          if problems:
+              for problem in problems:
+                  print("::error::" + problem)
+              print("Stopped before deployment. No uploaded file was deleted or changed.")
+              print("For MISSING_FILE, upload the named file from the original v14 package.")
+              print("For LAYOUT_CONFLICT, compare the flat and folder copies before retrying.")
+              sys.exit(1)
+
+          for source, target in planned:
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, target)
+              print("PREPARED: " + str(target.relative_to(root)))
+
+          print("LAYOUT_READY: " + str(len(expected)) + " required files; " + str(len(planned)) + " copied")
+          summary = os.getenv('GITHUB_STEP_SUMMARY')
+          if summary:
+              with open(summary, 'a', encoding='utf-8') as stream:
+                  stream.write("## Upload layout checked\n\n")
+                  stream.write(f"{len(expected)} required files found; {len(planned)} copied into their runtime folders.\n\n")
+                  stream.write("This prepares the Actions workspace only. It does not delete files, commit changes, or read repository Secrets.\n\n")
+          PY
+
+      - name: Check secret names without printing values
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: |
+          python - <<'PY'
+          import os, sys
+          names = ['CLOUDFLARE_ACCOUNT_ID', 'CLOUDFLARE_API_TOKEN', 'TAVILY_API_KEY', 'GH_DISPATCH_TOKEN']
+          missing = [name for name in names if not os.getenv(name, '').strip()]
+          for name in missing:
+              print('::error::Missing repository Secret: ' + name)
+          if missing:
+              sys.exit(1)
+          print('All four required Secrets are set. Values are not displayed.')
+          PY
+
+      - name: Set up Node
+        if: env.JOB_MODE == 'deploy'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Python packages
+        run: python -m pip install -r requirements.txt
+
+      - name: Check Python and pipeline tests
+        run: |
+          python -m compileall -q scripts
+          python -m unittest discover -s tests -p test_pipeline.py
+
+      - name: Check website backend tests
+        if: env.JOB_MODE == 'deploy'
+        run: node --test tests/worker.test.mjs
+
+      - name: Install deployment packages
+        if: env.JOB_MODE == 'deploy'
+        run: npm install --no-audit --no-fund
+
+      - name: Deploy website to Cloudflare
+        if: env.JOB_MODE == 'deploy'
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: |
+          python scripts/deploy.py
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          p = Path(os.environ['GITHUB_STEP_SUMMARY'])
+          text = p.read_text()
+          text = text.replace('Actions -> Collect and verify', 'Actions -> Website - Deploy and Update')
+          p.write_text(text)
+          PY
+
+      - name: Run live verification or scholarship update
+        if: env.JOB_MODE != 'deploy'
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+        run: python scripts/runner.py
