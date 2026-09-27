@@ -159,6 +159,106 @@ jobs:
           print("Redirects remain blocked; only the expected success response is accepted.")
           PY
 
+      - name: Improve official source verification
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("scripts/runner.py")
+          s = p.read_text(encoding="utf-8")
+          if "VERIFY_SOURCE_FALLBACK_V1" not in s:
+              start = s.index("    def live_page():\n", s.index("def verify(api):"))
+              end = s.index("    def trigger():\n", start)
+              replacement = r'''    # VERIFY_SOURCE_FALLBACK_V1: this is an HTML connectivity check only.
+              source_attempts = []
+              def live_page():
+                  candidates, domains = [], set()
+                  def official(url):
+                      host = (urlsplit(url).hostname or '').lower()
+                      return host.endswith(('.edu.tw', '.gov.tw'))
+                  def add(url):
+                      try:
+                          url = canonical(url)
+                          host = (urlsplit(url).hostname or '').lower()
+                          domain = '.'.join(host.split('.')[-3:])
+                          if not official(url) or ATTACH.search(url) or domain in domains:
+                              return
+                          domains.add(domain)
+                          candidates.append(url)
+                      except (TypeError, ValueError):
+                          return
+                  # At most two distinct institutions from the existing search request.
+                  for item in results:
+                      if isinstance(item, dict):
+                          add(item.get('url', ''))
+                      if len(candidates) >= 2:
+                          break
+                  # Existing registered scholarship sources, not new search API calls.
+                  for url in [
+                      'https://scholarship.ntut.edu.tw/',
+                      'https://advisory.ntu.edu.tw/',
+                      'https://niuosa.niu.edu.tw/p/406-1004-74149%2Cr277.php',
+                      'https://aura.stust.edu.tw/activity/stust_scholarship.aspx',
+                      'https://student.nkuht.edu.tw/p/404-1005-4954.php',
+                      'https://www.edu.tw/helpdreams/'
+                  ]:
+                      add(url)
+                  class ProbeReader(Reader):
+                      def __init__(self):
+                          super().__init__()
+                          self.last_problem = ''
+                      def raw(self, url):
+                          try:
+                              reply = super().raw(url)
+                          except Exception as exc:
+                              stage = 'ROBOTS' if urlsplit(url).path == '/robots.txt' else 'PAGE'
+                              self.last_problem = stage + '_' + type(exc).__name__
+                              raise
+                          if urlsplit(url).path == '/robots.txt' and reply[0] not in (200, 404):
+                              self.last_problem = 'ROBOTS_HTTP_' + str(reply[0])
+                          return reply
+                  reader, started = ProbeReader(), time.monotonic()
+                  for url in candidates[:6]:
+                      if time.monotonic() - started > 150:
+                          break
+                      reader.last_problem = ''
+                      try:
+                          page = reader.page(url, max_attachments=0)
+                          body = page.body_text or page.text
+                          if not official(page.url):
+                              raise ValueError('REDIRECT_OUTSIDE_OFFICIAL_DOMAIN')
+                          if re.search(r'access denied|just a moment|captcha|attention required', page.title, re.I):
+                              raise ValueError('CHALLENGE_PAGE_NOT_NOTICE')
+                          if len(body.strip()) < 80 or not WORDS.search(body):
+                              raise ValueError('NO_SCHOLARSHIP_TEXT')
+                          attempt = {'url': url, 'ok': True, 'finalUrl': page.url,
+                                     'characters': len(body), 'scope': 'HTML only; no attachments checked'}
+                          source_attempts.append(attempt)
+                          print('SOURCE_OK ' + json.dumps(attempt, ensure_ascii=True))
+                          return 'Official HTML read: ' + urlsplit(page.url).hostname + '; attachments not tested'
+                      except Exception as exc:
+                          message = str(exc)
+                          reason = reader.last_problem or type(exc).__name__
+                          if re.fullmatch(r'Source HTTP [0-9]{3}', message):
+                              reason = message
+                          elif message in ('REDIRECT_OUTSIDE_OFFICIAL_DOMAIN',
+                                           'CHALLENGE_PAGE_NOT_NOTICE', 'NO_SCHOLARSHIP_TEXT'):
+                              reason = message
+                          elif isinstance(exc, PermissionError) and not reader.last_problem:
+                              reason = 'ROBOTS_DISALLOWED_OR_CRAWL_DELAY'
+                          attempt = {'url': url, 'ok': False, 'reason': reason}
+                          source_attempts.append(attempt)
+                          print('SOURCE_FAILED ' + json.dumps(attempt, ensure_ascii=True))
+                  raise RuntimeError('No readable official scholarship HTML in ' + str(len(source_attempts))
+                                     + ' attempts; see SOURCE_FAILED logs. Verification remains FAILED.')
+              record('Live official source', live_page)
+              checks[-1]['sources'] = source_attempts
+          '''
+              s = s[:start] + replacement + s[end:]
+              compile(s, str(p), "exec")
+              p.write_text(s, encoding="utf-8")
+          print("READY: diverse official sources; failures remain failures; robots checks unchanged.")
+          PY
+
       - name: Check secret names without printing values
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -168,24 +268,12 @@ jobs:
         run: |
           python - <<'PY'
           import os, sys
-
-          names = [
-              'CLOUDFLARE_ACCOUNT_ID',
-              'CLOUDFLARE_API_TOKEN',
-              'TAVILY_API_KEY',
-              'GH_DISPATCH_TOKEN'
-          ]
-          missing = [
-              name for name in names
-              if not os.getenv(name, '').strip()
-          ]
-
+          names = ['CLOUDFLARE_ACCOUNT_ID', 'CLOUDFLARE_API_TOKEN', 'TAVILY_API_KEY', 'GH_DISPATCH_TOKEN']
+          missing = [name for name in names if not os.getenv(name, '').strip()]
           for name in missing:
               print('::error::Missing repository Secret: ' + name)
-
           if missing:
               sys.exit(1)
-
           print('All four required Secrets are set. Values are not displayed.')
           PY
 
@@ -223,13 +311,9 @@ jobs:
           python - <<'PY'
           import os
           from pathlib import Path
-
           p = Path(os.environ['GITHUB_STEP_SUMMARY'])
           text = p.read_text()
-          text = text.replace(
-              'Actions -> Collect and verify',
-              'Actions -> Website - Deploy and Update'
-          )
+          text = text.replace('Actions -> Collect and verify', 'Actions -> Website - Deploy and Update')
           p.write_text(text)
           PY
 
