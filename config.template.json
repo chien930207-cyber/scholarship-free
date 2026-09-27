@@ -1,0 +1,11 @@
+{
+ "name":"scholarship-free",
+ "main":"worker/index.mjs",
+ "compatibility_date":"2026-09-01",
+ "workers_dev":true,
+ "assets":{"directory":"web","binding":"ASSETS","run_worker_first":["/api/*","/internal/*","/data/*","/healthz"]},
+ "ai":{"binding":"AI"},
+ "d1_databases":[{"binding":"DB","database_name":"scholarship-free-data","database_id":"AUTO"}],
+ "triggers":{"crons":["0 4 * * *"]},
+ "vars":{"GITHUB_REPO":"AUTO","GITHUB_BRANCH":"main","SEARCH_DAILY_LIMIT":"30","SEARCH_MONTHLY_LIMIT":"900","AI_DAILY_LIMIT":"16","JOBS_DAILY_LIMIT":"12","SEARCH_CONFIGURED":"true"}
+}

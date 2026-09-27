@@ -1,0 +1,28 @@
+test_new_search_extract_store_repeat_and_expire (test_pipeline.EndToEndTests.test_new_search_extract_store_repeat_and_expire) ... ok
+test_outage_not_false_success (test_pipeline.EndToEndTests.test_outage_not_false_success) ... ok
+test_canonical_tracking_removed (test_pipeline.ModelTests.test_canonical_tracking_removed) ... ok
+test_chinese_document_copies (test_pipeline.ModelTests.test_chinese_document_copies) ... ok
+test_dates_need_evidence (test_pipeline.ModelTests.test_dates_need_evidence) ... ok
+test_direct_submission_not_inferred (test_pipeline.ModelTests.test_direct_submission_not_inferred) ... ok
+test_document_copies_not_year_substring (test_pipeline.ModelTests.test_document_copies_not_year_substring) ... ok
+test_exact_time (test_pipeline.ModelTests.test_exact_time) ... ok
+test_expiry_respects_all_routes (test_pipeline.ModelTests.test_expiry_respects_all_routes) ... ok
+test_json_wrapper (test_pipeline.ModelTests.test_json_wrapper) ... ok
+test_missing_document_evidence_not_ready (test_pipeline.ModelTests.test_missing_document_evidence_not_ready) ... ok
+test_new_host_needs_confirmation (test_pipeline.ModelTests.test_new_host_needs_confirmation) ... ok
+test_numeric_substring_not_accepted (test_pipeline.ModelTests.test_numeric_substring_not_accepted) ... ok
+test_or_rule_not_flattened (test_pipeline.ModelTests.test_or_rule_not_flattened) ... ok
+test_private_dns_rejected (test_pipeline.ModelTests.test_private_dns_rejected) ... ok
+test_reject_private_url (test_pipeline.ModelTests.test_reject_private_url) ... ok
+test_scan_missing_attachment_not_ready (test_pipeline.ModelTests.test_scan_missing_attachment_not_ready) ... ok
+test_unknown_deadline_not_fabricated (test_pipeline.ModelTests.test_unknown_deadline_not_fabricated) ... ok
+test_valid_structured_machine_ready (test_pipeline.ModelTests.test_valid_structured_machine_ready) ... ok
+test_wrong_grade_period_becomes_question (test_pipeline.ModelTests.test_wrong_grade_period_becomes_question) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.081s
+
+OK
+{"kind": "lookup", "outcome": "completed", "counts": {"pagesAttempted": 1, "pagesSucceeded": 1, "added": 1, "updated": 0, "analyzed": 1, "autoReady": 1, "searchesSucceeded": 2, "unreadPages": 0, "awaitingAnalysis": 0, "archived": 0}}
+{"kind": "lookup", "outcome": "completed", "counts": {"pagesAttempted": 1, "pagesSucceeded": 1, "added": 0, "updated": 0, "analyzed": 0, "autoReady": 0, "searchesSucceeded": 2, "unreadPages": 0, "awaitingAnalysis": 0, "archived": 0}}
+{"kind": "lookup", "outcome": "partial", "counts": {"pagesAttempted": 0, "pagesSucceeded": 0, "added": 0, "updated": 0, "analyzed": 0, "autoReady": 0, "searchesSucceeded": 0, "unreadPages": 0, "awaitingAnalysis": 0, "archived": 0}}

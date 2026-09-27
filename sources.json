@@ -1,0 +1,2710 @@
+{
+  "version": 2,
+  "sources": [
+    {
+      "id": "moe",
+      "name": "教育部圓夢助學網",
+      "kind": "政府機關",
+      "url": "https://www.edu.tw/helpdreams/SiteMap.aspx",
+      "discovery": true,
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "base"
+    },
+    {
+      "id": "niu_low",
+      "name": "國立宜蘭大學｜生輔組",
+      "kind": "學校",
+      "url": "https://niuosa.niu.edu.tw/p/406-1004-74149%2Cr277.php",
+      "discovery": false,
+      "allowedHosts": [
+        "niuosa.niu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "niu"
+    },
+    {
+      "id": "niu_ht",
+      "name": "國立宜蘭大學｜行天宮公告",
+      "kind": "學校",
+      "url": "https://niuosa.niu.edu.tw/p/404-1004-74228.php",
+      "discovery": false,
+      "allowedHosts": [
+        "niuosa.niu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "niu"
+    },
+    {
+      "id": "ht",
+      "name": "行天宮文教發展促進基金會",
+      "kind": "宮廟／基金會",
+      "url": "https://www.ht.org.tw/religion153.htm",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ht.org.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "base"
+    },
+    {
+      "id": "cht",
+      "name": "中華電信基金會",
+      "kind": "基金會",
+      "url": "https://www.chtf.org.tw/project/693",
+      "discovery": true,
+      "allowedHosts": [
+        "www.chtf.org.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "base"
+    },
+    {
+      "id": "nangang",
+      "name": "臺北市立南港高中｜大碩公告",
+      "kind": "學校",
+      "url": "https://www.ngsh.tp.edu.tw/p/406-1000-26232%2Cr14.php",
+      "discovery": false,
+      "allowedHosts": [
+        "www.ngsh.tp.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ngsh"
+    },
+    {
+      "id": "ykvs",
+      "name": "鶯歌工商｜獎助學金訊息",
+      "kind": "學校",
+      "url": "https://www.ykvs.ntpc.edu.tw/p/403-1000-231.php",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ykvs.ntpc.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ykvs"
+    },
+    {
+      "id": "stust",
+      "name": "南臺科技大學｜獎學金一覽",
+      "kind": "學校",
+      "url": "https://aura.stust.edu.tw/activity/stust_scholarship.aspx",
+      "discovery": true,
+      "allowedHosts": [
+        "aura.stust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "stust"
+    },
+    {
+      "id": "npust",
+      "name": "屏東科技大學｜獎學金項目",
+      "kind": "學校",
+      "url": "https://osas.npust.edu.tw/alltop/module/BA/BAH10_feeScholarshipPublic.php",
+      "discovery": true,
+      "allowedHosts": [
+        "osas.npust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "npust"
+    },
+    {
+      "id": "taichung",
+      "name": "臺中市原住民族事務委員會",
+      "kind": "政府機關",
+      "url": "https://www.ipd.taichung.gov.tw/3339757/post",
+      "discovery": false,
+      "allowedHosts": [
+        "www.ipd.taichung.gov.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "nkuht",
+      "name": "高雄餐旅大學｜校內外獎助學金",
+      "kind": "學校",
+      "url": "https://student.nkuht.edu.tw/p/404-1005-4954.php",
+      "discovery": true,
+      "allowedHosts": [
+        "student.nkuht.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nkuht"
+    },
+    {
+      "id": "dyhu",
+      "name": "德育護理健康學院｜方賢齊公告",
+      "kind": "學校",
+      "url": "https://dsa.dyhu.edu.tw/p/16-1021-63560.php",
+      "discovery": false,
+      "allowedHosts": [
+        "dsa.dyhu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "ht_forms",
+      "name": "行天宮｜本期申請書表",
+      "kind": "宮廟／基金會",
+      "url": "https://www.ht.org.tw/religion154.htm",
+      "discovery": false,
+      "monitorAttachments": true,
+      "allowedHosts": [
+        "www.ht.org.tw"
+      ],
+      "enabled": true,
+      "scope": "base"
+    },
+    {
+      "id": "ntut",
+      "name": "臺北科技大學｜獎助學金平台",
+      "kind": "學校",
+      "url": "https://scholarship.ntut.edu.tw/",
+      "discovery": true,
+      "monitorAttachments": false,
+      "allowedHosts": [
+        "scholarship.ntut.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "schoolId": "ntut",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "base-hakka-research",
+      "name": "教育部圓夢助學網｜客家信仰文化研究生獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-changyi",
+      "name": "教育部圓夢助學網｜昌益慈善基金會助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-yinshun",
+      "name": "教育部圓夢助學網｜印順文教基金會論文獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-yonglin",
+      "name": "教育部圓夢助學網｜永齡銘日希望獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "ntu-list",
+      "name": "臺大生輔組獎學金",
+      "url": "https://advisory.ntu.edu.tw/",
+      "allowedHosts": [
+        "advisory.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntu",
+      "daily": true,
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      }
+    },
+    {
+      "id": "ntu-stat",
+      "name": "統計學程研究生獎勵",
+      "url": "https://www.stat.ntu.edu.tw/cp_n_196551.html",
+      "allowedHosts": [
+        "www.stat.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntu"
+    },
+    {
+      "id": "nthu-chem",
+      "name": "清華化學系獎學金（局部覆蓋）",
+      "url": "https://chem.site.nthu.edu.tw/p/406-1328-171079,r8146.php",
+      "allowedHosts": [
+        "chem.site.nthu.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nthu"
+    },
+    {
+      "id": "nccu-aid",
+      "name": "政大研究生助學措施",
+      "url": "https://aca.nccu.edu.tw/en/%E7%A2%A9%E5%8D%9A%E5%A3%AB%E7%8F%AD/%E5%8A%A9%E5%AD%B8%E6%8E%AA%E6%96%BD",
+      "allowedHosts": [
+        "aca.nccu.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nccu"
+    },
+    {
+      "id": "yzu-scholar",
+      "name": "元智獎助學金公告",
+      "url": "https://announce.yzu.edu.tw/index.php/tw/st/st-lgs20260918-1200-01",
+      "allowedHosts": [
+        "announce.yzu.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "yzu"
+    },
+    {
+      "id": "hk-scholar",
+      "name": "弘光獎助學金公告",
+      "url": "https://www.hk.edu.tw/remote/HKlf_1248674/",
+      "allowedHosts": [
+        "www.hk.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "hk"
+    },
+    {
+      "id": "ntut-campus",
+      "name": "北科大校內校友獎學金",
+      "url": "https://scholarship.ntut.edu.tw/p/412-1043-13136.php",
+      "allowedHosts": [
+        "scholarship.ntut.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntut"
+    },
+    {
+      "id": "ntut-external",
+      "name": "北科大校外獎學金",
+      "url": "https://scholarship.ntut.edu.tw/p/412-1043-13255.php",
+      "allowedHosts": [
+        "scholarship.ntut.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntut"
+    },
+    {
+      "id": "base-new-generation",
+      "name": "教育部圓夢助學網｜新生代希望工程",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=2C28D363038C300F&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-ht-emergency",
+      "name": "教育部圓夢助學網｜行天宮學生急難濟助",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=0984A85A3A9A6677&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-cdib-skill",
+      "name": "教育部圓夢助學網｜技藝職能獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=90F64A99047355A7&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base",
+      "daily": true
+    },
+    {
+      "id": "base-futien",
+      "name": "教育部圓夢助學網｜欣榮圖書館急難學生助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=952B1D123B71E9EE&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-it-social",
+      "name": "教育部圓夢助學網｜資訊人社會關懷獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=CC62364F57537537&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-heart-child",
+      "name": "教育部圓夢助學網｜心臟病童獎勵學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F39864F689523588&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-wenxiang",
+      "name": "教育部圓夢助學網｜文向獎學金與向學築夢計畫",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=AD6908DFDDB62656&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-tianhe",
+      "name": "教育部圓夢助學網｜青力親為・千萬祝福服務學習獎勵",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=FB76F1E6517A12DC&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-ht-gifted",
+      "name": "教育部圓夢助學網｜行天宮資優學生長期獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=7769B1BD01306B45&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base",
+      "daily": true
+    },
+    {
+      "id": "base-auden",
+      "name": "教育部圓夢助學網｜耀登炳南創新研究獎及優秀人才獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=85E1E406503C665B&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-honhai",
+      "name": "教育部圓夢助學網｜鴻海獎學鯨",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=DED5DAB0D6C7BED6&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-yutian",
+      "name": "教育部圓夢助學網｜癌友家庭子女育秧獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=29B3D06675FAF607&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-delicacy",
+      "name": "教育部圓夢助學網｜得力教育基金會清寒獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F9057F9640B28033&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-tfcf-resilient",
+      "name": "教育部圓夢助學網｜韌世代獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=02BEEFEAF49A5225&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-noordhoff",
+      "name": "教育部圓夢助學網｜得福獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=E0C48B7F39ACB61F&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-dapeng",
+      "name": "教育部圓夢助學網｜大鵬科技慈善基金會獎助學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=68651C4217F75095&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-chiayi-city",
+      "name": "教育部圓夢助學網｜嘉義市中等以上學校清寒優秀學生獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=11EFF33070D6DF4B&s=455B2352278A7C8D&sms=931FF851D2FB2128",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-pingtung-tech",
+      "name": "教育部圓夢助學網｜屏東縣高科技產業人才培育優秀學生獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=11EFF33070D6DF4B&s=D07C871A0467CE41&sms=931FF851D2FB2128",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-yilan-county",
+      "name": "教育部圓夢助學網｜宜蘭縣中等以上學校優秀學生獎學金",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=11EFF33070D6DF4B&s=68AF3B64ECE864A9&sms=931FF851D2FB2128",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-cht-fang",
+      "name": "中華電信基金會／校方公告｜方賢齊先生獎學金",
+      "url": "https://www.chtf.org.tw/project/693",
+      "allowedHosts": [
+        "www.chtf.org.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-taichung-indigenous",
+      "name": "臺中市政府原住民族事務委員會／校方公告｜臺中市原住民學生獎學金",
+      "url": "https://www.ipd.taichung.gov.tw/3339757/post",
+      "allowedHosts": [
+        "www.ipd.taichung.gov.tw"
+      ],
+      "enabled": true,
+      "discovery": false,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "base-private-list",
+      "name": "教育部民間獎助學金目錄",
+      "url": "https://www.edu.tw/helpdreams/Grants.aspx?n=2BBF7170197CE7D3&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "base",
+      "daily": true
+    },
+    {
+      "id": "base-government-list",
+      "name": "教育部政府獎助學金目錄",
+      "url": "https://www.edu.tw/helpdreams/Grants.aspx?n=11EFF33070D6DF4B&sms=931FF851D2FB2128",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "discovery": true,
+      "monitorAttachments": false,
+      "scope": "base"
+    },
+    {
+      "id": "v4-daya-114-2",
+      "name": "大雅區 114 學年度第 2 學期高中職暨大專院校獎學金",
+      "kind": "官方公告",
+      "url": "https://www.daya.taichung.gov.tw/982760/982764/982772/4040730",
+      "discovery": true,
+      "allowedHosts": [
+        "www.daya.taichung.gov.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "v4-song-yingtan",
+      "name": "115 年度宋映潭先生獎學金",
+      "kind": "官方公告",
+      "url": "https://niuosa.niu.edu.tw/p/404-1004-74657.php",
+      "discovery": true,
+      "allowedHosts": [
+        "niuosa.niu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "base"
+    },
+    {
+      "id": "v7-input-01",
+      "name": "開南大學學務公告 52807",
+      "kind": "公開來源",
+      "url": "https://sa.knu.edu.tw/p/406-1005-52807,r710.php?Lang=zh-tw",
+      "allowedHosts": [
+        "sa.knu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "knu"
+    },
+    {
+      "id": "v7-input-02",
+      "name": "2025 鴻海科技獎辦法 PDF",
+      "kind": "公開來源",
+      "url": "https://www.estudiarentaiwan.org/userfiles/files/2025%E5%B9%B4%E9%B4%BB%E6%B5%B7%E7%A7%91%E6%8A%80%E7%8D%8E%E8%BE%A6%E6%B3%95.pdf",
+      "allowedHosts": [
+        "www.estudiarentaiwan.org"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": false,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "format": "pdf"
+    },
+    {
+      "id": "v7-input-03",
+      "name": "臺大化工系公告 263116",
+      "kind": "公開來源",
+      "url": "https://che.ntu.edu.tw/che/News_Content_n_106656_sms_83377_s_263116.html",
+      "allowedHosts": [
+        "che.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ntu"
+    },
+    {
+      "id": "v7-input-04",
+      "name": "北科大公告 152347",
+      "kind": "公開來源",
+      "url": "https://eo.ntut.edu.tw/p/406-1069-152347,r347.php?Lang=zh-tw",
+      "allowedHosts": [
+        "eo.ntut.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ntut"
+    },
+    {
+      "id": "v7-input-05",
+      "name": "2026 台積電博士獎學金第一梯次",
+      "kind": "公開來源",
+      "url": "https://tsmccenter.ntu.edu.tw/News_Photo_Content_n_71775_s_258426.html",
+      "allowedHosts": [
+        "tsmccenter.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ntu"
+    },
+    {
+      "id": "v7-input-06",
+      "name": "2026 台積電博士獎學金第二梯次",
+      "kind": "公開來源",
+      "url": "https://tsmccenter.ntu.edu.tw/News_Photo_Content_n_71775_s_263042.html",
+      "allowedHosts": [
+        "tsmccenter.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ntu"
+    },
+    {
+      "id": "v7-input-07",
+      "name": "中興大學國科會博士生研究獎學金",
+      "kind": "公開來源",
+      "url": "https://research.nchu.edu.tw/news-detail/id/4081",
+      "allowedHosts": [
+        "research.nchu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "nchu"
+    },
+    {
+      "id": "v7-input-08",
+      "name": "屏東大學原資中心公告 186683",
+      "kind": "公開來源",
+      "url": "https://isrc.nptu.edu.tw/p/405-1079-186683,c15064.php?Lang=zh-tw",
+      "allowedHosts": [
+        "isrc.nptu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "nptu"
+    },
+    {
+      "id": "v7-input-09",
+      "name": "屏東大學生輔組公告 199226",
+      "kind": "公開來源",
+      "url": "https://staf-life.nptu.edu.tw/p/406-1074-199226,r3893.php?Lang=zh-tw",
+      "allowedHosts": [
+        "staf-life.nptu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "nptu"
+    },
+    {
+      "id": "v7-input-10",
+      "name": "弘光大學轉址 HKlf_1249476",
+      "kind": "公開來源",
+      "url": "https://www.hk.edu.tw/remote/HKlf_1249476/",
+      "allowedHosts": [
+        "www.hk.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "hk"
+    },
+    {
+      "id": "v7-input-11",
+      "name": "弘光大學轉址 HKlf_1249263",
+      "kind": "公開來源",
+      "url": "https://www.hk.edu.tw/remote/HKlf_1249263/",
+      "allowedHosts": [
+        "www.hk.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "hk"
+    },
+    {
+      "id": "v7-input-12",
+      "name": "弘光大學轉知 2026 鴻海獎學鯨",
+      "kind": "公開來源",
+      "url": "https://lf.hk.edu.tw/%E3%80%90%E7%8D%8E%E5%8A%A9%E5%AD%B8%E9%87%91%E7%94%B3%E8%AB%8B%E3%80%91%E9%B4%BB%E6%B5%B7%E6%95%99%E8%82%B2%E5%9F%BA%E9%87%91%E6%9C%832026%E5%B9%B4%E3%80%8C%E9%B4%BB%E6%B5%B7%E7%8D%8E%E5%AD%B8/",
+      "allowedHosts": [
+        "lf.hk.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "hk"
+    },
+    {
+      "id": "v7-input-13",
+      "name": "臺科大數位學習所公告 139406",
+      "kind": "公開來源",
+      "url": "https://www.gidle.ntust.edu.tw/p/406-1006-139406,r1710.php?Lang=zh-tw",
+      "allowedHosts": [
+        "www.gidle.ntust.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ntust"
+    },
+    {
+      "id": "v7-input-14",
+      "name": "臺北市立大學轉知 2026 鴻海獎學鯨",
+      "kind": "公開來源",
+      "url": "https://service.utaipei.edu.tw/p/404-1034-133137.php?Lang=zh-tw",
+      "allowedHosts": [
+        "service.utaipei.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "utaipei"
+    },
+    {
+      "id": "v7-input-15",
+      "name": "htsh.ntpc.edu.tw 公告 14756",
+      "kind": "公開來源",
+      "url": "https://www.htsh.ntpc.edu.tw/p/406-1000-14756,r23.php?Lang=zh-tw",
+      "allowedHosts": [
+        "www.htsh.ntpc.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-16",
+      "name": "空中大學桃園中心：圓夢助學網資訊",
+      "kind": "公開來源",
+      "url": "https://www2.nou.edu.tw/taoyuan/docdetail.aspx?uid=3073&pid=3073&docid=56946",
+      "allowedHosts": [
+        "www2.nou.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "nou"
+    },
+    {
+      "id": "v7-input-17",
+      "name": "文化大學弱勢學生安心就學修正對照表（108年）",
+      "kind": "公開來源",
+      "url": "https://secretariat.pccu.edu.tw/var/file/10/1010/img/437/rules_1760_02.pdf",
+      "allowedHosts": [
+        "secretariat.pccu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": false,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "format": "pdf",
+      "schoolId": "pccu"
+    },
+    {
+      "id": "v7-input-19",
+      "name": "政府入口網：多元就學支持",
+      "kind": "公開來源",
+      "url": "https://www.gov.tw/News_Content_26_402188",
+      "allowedHosts": [
+        "www.gov.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-20",
+      "name": "玉山培育傑出人才獎學金",
+      "kind": "公開來源",
+      "url": "https://www.esunfhc.com/zh-tw/Foundation/volunteer/Scholarship/Scholarship-Plan",
+      "allowedHosts": [
+        "www.esunfhc.com"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-21",
+      "name": "原民會大專校院獎助學金系統",
+      "kind": "公開來源",
+      "url": "https://cipgrant.fju.edu.tw/",
+      "allowedHosts": [
+        "cipgrant.fju.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-22",
+      "name": "新生醫專 115 年高教深耕就學協助",
+      "kind": "公開來源",
+      "url": "https://sa.hsc.edu.tw/p/16-1002-52053.php?Lang=zh-tw",
+      "allowedHosts": [
+        "sa.hsc.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "hsc"
+    },
+    {
+      "id": "v7-input-23",
+      "name": "嘉義大學安心就學活動介紹與項目導覽",
+      "kind": "公開來源",
+      "url": "https://sites.google.com/view/ncyuhespss/%E5%8A%A0%E5%88%86%E6%B4%BB%E5%8B%95%E9%A0%85%E7%9B%AE/%E6%B4%BB%E5%8B%95%E4%BB%8B%E7%B4%B9",
+      "allowedHosts": [
+        "sites.google.com"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ncyu"
+    },
+    {
+      "id": "v7-input-24",
+      "name": "彰化縣伸港鄉公告 437576",
+      "kind": "公開來源",
+      "url": "https://www.chcg.gov.tw/TSO/shengang/04bulletin/bulletin02_con.aspx?bull_id=437576",
+      "allowedHosts": [
+        "www.chcg.gov.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-25",
+      "name": "臺大學生財務支援系統入口",
+      "kind": "公開來源",
+      "url": "https://advisory.ntu.edu.tw/CMS/Page/286",
+      "allowedHosts": [
+        "advisory.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ntu"
+    },
+    {
+      "id": "v7-input-26",
+      "name": "美和科技大學原資中心公告 54861",
+      "kind": "公開來源",
+      "url": "https://indigenous.meiho.edu.tw/p/405-1027-54861,c5769.php?Lang=zh-tw",
+      "allowedHosts": [
+        "indigenous.meiho.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "meiho"
+    },
+    {
+      "id": "v7-input-27",
+      "name": "教育部大專校院弱勢學生助學計畫",
+      "kind": "公開來源",
+      "url": "https://www.edu.tw/helpdreams/cp.aspx?n=294130B70B308624&s=A8A03607552A5F17",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-30",
+      "name": "教育部獎助資訊導覽",
+      "kind": "公開來源",
+      "url": "https://www.edu.tw/helpdreams/Content_List.aspx?n=D50A7AEB3C165858",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-31",
+      "name": "開南大學學務頁面 26229",
+      "kind": "公開來源",
+      "url": "https://sa.knu.edu.tw/p/405-1005-26229,c3252.php?Lang=zh-tw",
+      "allowedHosts": [
+        "sa.knu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "knu"
+    },
+    {
+      "id": "v7-input-32",
+      "name": "聯合新聞網：清寒優秀學生勵學獎學金報導",
+      "kind": "參考入口",
+      "url": "https://udn.com/news/story/6885/9289757",
+      "allowedHosts": [
+        "udn.com"
+      ],
+      "enabled": false,
+      "scope": "base",
+      "discovery": false,
+      "monitorAttachments": true,
+      "daily": false,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7",
+      "disabledReason": "新聞非申請辦法"
+    },
+    {
+      "id": "v7-input-33",
+      "name": "慈濟中國大陸 2026 新芽獎助學金",
+      "kind": "公開來源",
+      "url": "https://www.tzuchi.org.cn/cjxm/jyzx/zxj/",
+      "allowedHosts": [
+        "www.tzuchi.org.cn"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-34",
+      "name": "高醫政府機關博士生研究獎學金規定",
+      "kind": "公開來源",
+      "url": "https://lawdb.kmu.edu.tw/index.php/%E6%A0%B8%E7%99%BC%E6%94%BF%E5%BA%9C%E6%A9%9F%E9%97%9C%E5%8D%9A%E5%A3%AB%E7%94%9F%E7%A0%94%E7%A9%B6%E7%8D%8E%E5%AD%B8%E9%87%91%E5%AF%A6%E6%96%BD%E8%A6%81%E9%BB%9E",
+      "allowedHosts": [
+        "lawdb.kmu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "kmu"
+    },
+    {
+      "id": "v7-input-35",
+      "name": "平安、菁英獎學金辦法",
+      "kind": "公開來源",
+      "url": "https://www.elite-well.org.tw/scholarship.php",
+      "allowedHosts": [
+        "www.elite-well.org.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-36",
+      "name": "ftope.org.tw 獎學金搜尋（需登入）",
+      "kind": "參考入口",
+      "url": "https://www.ftope.org.tw/search",
+      "allowedHosts": [
+        "www.ftope.org.tw"
+      ],
+      "enabled": false,
+      "scope": "base",
+      "discovery": false,
+      "monitorAttachments": true,
+      "daily": false,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7",
+      "disabledReason": "須會員登入，不繞過登入或擷取個人資料"
+    },
+    {
+      "id": "v7-input-37",
+      "name": "臺北市清寒學生助學基金會申請資格",
+      "kind": "公開來源",
+      "url": "https://fhus.taipei/requirement/",
+      "allowedHosts": [
+        "fhus.taipei"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-39",
+      "name": "中華開發文教基金會薪傳100×課輔100",
+      "kind": "公開來源",
+      "url": "https://www.cdffoundation.org/zh-tw/scholarships/tutoring-legacy-scholarship/tutoring-legacy-scholarship-application",
+      "allowedHosts": [
+        "www.cdffoundation.org"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-40",
+      "name": "clvsc.tyc.edu.tw 公告 23860",
+      "kind": "公開來源",
+      "url": "https://www.clvsc.tyc.edu.tw/p/405-1000-23860,c663.php?Lang=zh-tw",
+      "allowedHosts": [
+        "www.clvsc.tyc.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-41",
+      "name": "東華大學學務公告 261902",
+      "kind": "公開來源",
+      "url": "https://osa.ndhu.edu.tw/p/406-1005-261902,r402.php?Lang=zh-tw",
+      "allowedHosts": [
+        "osa.ndhu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "ndhu"
+    },
+    {
+      "id": "v7-input-42",
+      "name": "鄭豐喜文化教育基金會獎學金公告",
+      "kind": "公開來源",
+      "url": "https://www.cfh.org.tw/?cat=9",
+      "allowedHosts": [
+        "www.cfh.org.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": true,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-43",
+      "name": "教育部圓夢助學網首頁",
+      "kind": "公開來源",
+      "url": "https://www.edu.tw/helpdreams/",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7"
+    },
+    {
+      "id": "v7-input-44",
+      "name": "清華大學高教深耕學習輔導獎助問答",
+      "kind": "公開來源",
+      "url": "https://totakeoff.site.nthu.edu.tw/p/406-1259-267207,r5412.php?Lang=zh-tw",
+      "allowedHosts": [
+        "totakeoff.site.nthu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "discovery": true,
+      "monitorAttachments": true,
+      "daily": true,
+      "importDirect": false,
+      "inputBatch": "user-links-20260919-v7",
+      "schoolId": "nthu"
+    },
+    {
+      "id": "v7-detail-c8b2f94a68f6",
+      "name": "祥和低收及中低收入學生獎助學金",
+      "kind": "原始或補充公告",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=DD102593FDB1A032&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "daily": true,
+      "discovery": true,
+      "monitorAttachments": true,
+      "importDirect": true
+    },
+    {
+      "id": "v7-detail-d10b7fcc35fb",
+      "name": "2026罕見疾病獎助學金",
+      "kind": "原始或補充公告",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=3BFF7336E5AF5AE9&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "daily": true,
+      "discovery": true,
+      "monitorAttachments": true,
+      "importDirect": true
+    },
+    {
+      "id": "v7-detail-ecf16318f91c",
+      "name": "115-1榮盛大專青年成長暨助學金",
+      "kind": "原始或補充公告",
+      "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=12AED0688767E7CF&sms=0A01A72AAB9E5CD4",
+      "allowedHosts": [
+        "www.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "daily": true,
+      "discovery": true,
+      "monitorAttachments": true,
+      "importDirect": true
+    },
+    {
+      "id": "v7-detail-a0eb0607479d",
+      "name": "中興大學115年國科會博士生研究獎學金",
+      "kind": "原始或補充公告",
+      "url": "https://research.nchu.edu.tw/unit-article/mid/138",
+      "allowedHosts": [
+        "research.nchu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "school",
+      "daily": true,
+      "discovery": true,
+      "monitorAttachments": true,
+      "importDirect": true,
+      "schoolId": "nchu"
+    },
+    {
+      "id": "v7-detail-c3e25aaeb80e",
+      "name": "114學年度清寒優秀學生勵學獎學金試辦",
+      "kind": "原始或補充公告",
+      "url": "https://www.cna.com.tw/news/ahel/202601260245.aspx",
+      "allowedHosts": [
+        "www.cna.com.tw"
+      ],
+      "enabled": false,
+      "scope": "base",
+      "daily": false,
+      "discovery": true,
+      "monitorAttachments": true,
+      "importDirect": true
+    },
+    {
+      "id": "v7-detail-6eacaabef4fe",
+      "name": "2025 鴻海科技獎",
+      "kind": "原始或補充公告",
+      "url": "https://ds.ntu.edu.tw/tw/news/248/",
+      "allowedHosts": [
+        "ds.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "scope": "base",
+      "daily": true,
+      "discovery": true,
+      "monitorAttachments": true,
+      "importDirect": true
+    },
+    {
+      "id": "v9-nccu-homepage",
+      "name": "國立政治大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nccu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nccu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nccu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nthu-homepage",
+      "name": "國立清華大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nthu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nthu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nthu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntu-homepage",
+      "name": "國立臺灣大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntnu-homepage",
+      "name": "國立臺灣師範大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntnu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntnu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntnu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncku-homepage",
+      "name": "國立成功大學｜官方網站",
+      "kind": "學校",
+      "url": "https://web.ncku.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "web.ncku.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ncku",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nchu-homepage",
+      "name": "國立中興大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nchu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nchu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nchu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nycu-homepage",
+      "name": "國立陽明交通大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nycu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nycu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nycu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncu-homepage",
+      "name": "國立中央大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ncu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ncu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ncu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nsysu-homepage",
+      "name": "國立中山大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nsysu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nsysu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nsysu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntou-homepage",
+      "name": "國立臺灣海洋大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntou.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntou.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntou",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ccu-homepage",
+      "name": "國立中正大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ccu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ccu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ccu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nknu-homepage",
+      "name": "國立高雄師範大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nknu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nknu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nknu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncue-homepage",
+      "name": "國立彰化師範大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ncue.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ncue.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ncue",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntpu-homepage",
+      "name": "國立臺北大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntpu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntpu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntpu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncyu-homepage",
+      "name": "國立嘉義大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ncyu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ncyu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ncyu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nuk-homepage",
+      "name": "國立高雄大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nuk.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nuk.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nuk",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ndhu-homepage",
+      "name": "國立東華大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ndhu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ndhu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ndhu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncnu-homepage",
+      "name": "國立暨南國際大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ncnu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ncnu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ncnu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntust-homepage",
+      "name": "國立臺灣科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntust.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntust",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-yuntech-homepage",
+      "name": "國立雲林科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.yuntech.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.yuntech.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "yuntech",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-npust-homepage",
+      "name": "國立屏東科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.npust.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.npust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "npust",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntut-homepage",
+      "name": "國立臺北科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntut.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntut.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntut",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-tnua-homepage",
+      "name": "國立臺北藝術大學｜官方網站",
+      "kind": "學校",
+      "url": "https://w3.tnua.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "w3.tnua.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "tnua",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntua-homepage",
+      "name": "國立臺灣藝術大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntua.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntua.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntua",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nttu-homepage",
+      "name": "國立臺東大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nttu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nttu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nttu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-niu-homepage",
+      "name": "國立宜蘭大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.niu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.niu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "niu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nuu-homepage",
+      "name": "國立聯合大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nuu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nuu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nuu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nfu-homepage",
+      "name": "國立虎尾科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nfu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nfu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nfu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-tnnua-homepage",
+      "name": "國立臺南藝術大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.tnnua.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.tnnua.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "tnnua",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nutn-homepage",
+      "name": "國立臺南大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nutn.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nutn.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nutn",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntue-homepage",
+      "name": "國立臺北教育大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntue.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntue.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntue",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntcu-homepage",
+      "name": "國立臺中教育大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntcu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntcu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntcu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-npu-homepage",
+      "name": "國立澎湖科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.npu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.npu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "npu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncut-homepage",
+      "name": "國立勤益科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://web2.ncut.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "web2.ncut.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ncut",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntsu-homepage",
+      "name": "國立體育大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntsu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntsu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntsu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntunhs-homepage",
+      "name": "國立臺北護理健康大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntunhs.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntunhs.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntunhs",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nkuht-homepage",
+      "name": "國立高雄餐旅大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nkuht.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nkuht.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nkuht",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nqu-homepage",
+      "name": "國立金門大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nqu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nqu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nqu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntus-homepage",
+      "name": "國立臺灣體育運動大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntus.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntus.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntus",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nutc-homepage",
+      "name": "國立臺中科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nutc.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nutc.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nutc",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntub-homepage",
+      "name": "國立臺北商業大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.ntub.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.ntub.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "ntub",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nptu-homepage",
+      "name": "國立屏東大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nptu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nptu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nptu",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nkust-homepage",
+      "name": "國立高雄科技大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nkust.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nkust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nkust",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nou-homepage",
+      "name": "國立空中大學｜官方網站",
+      "kind": "學校",
+      "url": "https://www.nou.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.nou.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": false,
+      "scope": "school",
+      "schoolId": "nou",
+      "priority": 90,
+      "sourceType": "directory",
+      "verification": {
+        "method": "official-directory",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nccu-scholarships",
+      "name": "國立政治大學｜生活事務組獎助公告",
+      "kind": "學校",
+      "url": "https://osa.nccu.edu.tw/tw/%E7%94%9F%E6%B4%BB%E4%BA%8B%E5%8B%99%E6%9A%A8%E5%83%91%E7%94%9F%E8%BC%94%E5%B0%8E%E7%B5%84/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF",
+      "discovery": true,
+      "allowedHosts": [
+        "osa.nccu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nccu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nthu-scholarships",
+      "name": "國立清華大學｜助學系統",
+      "kind": "學校",
+      "url": "https://meo110.wwlc.nthu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "meo110.wwlc.nthu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nthu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "dynamic",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nycu-scholarships",
+      "name": "國立陽明交通大學｜校內外獎學金公開列表",
+      "kind": "學校",
+      "url": "https://sasystem.nycu.edu.tw/scholarship/index2.php",
+      "discovery": true,
+      "allowedHosts": [
+        "sasystem.nycu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nycu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nycu-scholarships2",
+      "name": "國立陽明交通大學｜學務處獎助學金專區",
+      "kind": "學校",
+      "url": "https://osa.nycu.edu.tw/osa/ch/app/folder/2869",
+      "discovery": true,
+      "allowedHosts": [
+        "osa.nycu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nycu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nchu-scholarships",
+      "name": "國立中興大學｜生活輔導組獎助學金公告",
+      "kind": "學校",
+      "url": "https://www.osa.nchu.edu.tw/osa/laa/sys/modules/osa_scholarship/",
+      "discovery": true,
+      "allowedHosts": [
+        "www.osa.nchu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nchu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncu-scholarships",
+      "name": "國立中央大學｜生活輔導組",
+      "kind": "學校",
+      "url": "https://military.ncu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "military.ncu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ncu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ccu-scholarships",
+      "name": "國立中正大學｜校外獎助學金公告",
+      "kind": "學校",
+      "url": "https://studentlife.ccu.edu.tw/p/403-1034-2789.php?Lang=zh-tw",
+      "discovery": true,
+      "allowedHosts": [
+        "studentlife.ccu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ccu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nsysu-scholarships",
+      "name": "國立中山大學｜校園生活與職涯發展組",
+      "kind": "學校",
+      "url": "https://ag-osa.nsysu.edu.tw/?Lang=zh-tw",
+      "discovery": true,
+      "allowedHosts": [
+        "ag-osa.nsysu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nsysu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntust-scholarships",
+      "name": "國立臺灣科技大學｜獎助學金與急難救助",
+      "kind": "學校",
+      "url": "https://student.ntust.edu.tw/p/412-1053-8403.php?Lang=zh-tw",
+      "discovery": true,
+      "allowedHosts": [
+        "student.ntust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ntust",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ntnu-scholarships",
+      "name": "國立臺灣師範大學｜生活輔導組獎助資訊",
+      "kind": "學校",
+      "url": "https://assistance.sa.ntnu.edu.tw/",
+      "discovery": true,
+      "allowedHosts": [
+        "assistance.sa.ntnu.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ntnu",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncku-scholarships",
+      "name": "國立成功大學｜生活輔導組公告",
+      "kind": "學校",
+      "url": "https://b3c002.web3.ncku.edu.tw/app/index.php",
+      "discovery": true,
+      "allowedHosts": [
+        "b3c002.web3.ncku.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ncku",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-ncue-scholarships",
+      "name": "國立彰化師範大學｜校外獎助學金一覽表",
+      "kind": "學校",
+      "url": "https://stuaffweb.ncue.edu.tw/p/412-1039-3230.php",
+      "discovery": true,
+      "allowedHosts": [
+        "stuaffweb.ncue.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "ncue",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "page",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-npust-scholarships",
+      "name": "國立屏東科技大學｜生輔獎助學金專區",
+      "kind": "學校",
+      "url": "https://osa.npust.edu.tw/unit/eas/scholarship/",
+      "discovery": true,
+      "allowedHosts": [
+        "osa.npust.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "npust",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "search-index",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    },
+    {
+      "id": "v9-nutc-scholarships",
+      "name": "國立臺中科技大學｜助學專區",
+      "kind": "學校",
+      "url": "https://student.nutc.edu.tw/p/412-1020-12554.php",
+      "discovery": true,
+      "allowedHosts": [
+        "student.nutc.edu.tw"
+      ],
+      "enabled": true,
+      "monitorAttachments": true,
+      "scope": "school",
+      "schoolId": "nutc",
+      "priority": 10,
+      "sourceType": "directory",
+      "verification": {
+        "method": "search-index",
+        "checkedAt": "2026-09-19",
+        "note": "來源入口登記，不代表後端擷取或全校獎項核對完成。"
+      },
+      "daily": false
+    }
+  ],
+  "settings": {
+    "maxCandidatesPerRun": 20,
+    "maxAttachmentsPerPage": 8,
+    "candidateRecheckHours": 24,
+    "minimumDelaySeconds": 2,
+    "maxRunSeconds": 600
+  },
+  "schemaVersion": 3
+}

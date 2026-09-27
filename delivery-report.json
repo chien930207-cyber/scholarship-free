@@ -1,0 +1,53 @@
+{
+  "appVersion": 14,
+  "checkedAt": "2026-09-20T12:32:33.612446+00:00",
+  "scope": "Local validation of integrated free package; not a deployed live service",
+  "results": {
+    "worker_control_plane": {
+      "passed": 12,
+      "failed": 0,
+      "method": "Node test runner, real in-memory SQLite D1 adapter; GitHub dispatch and AI bindings mocked"
+    },
+    "pipeline": {
+      "passed": 20,
+      "failed": 0,
+      "method": "Python unittest; synthetic fetched announcement and AI responses; real compiler, deduplication, expiry and persistence adapter"
+    },
+    "browser": {
+      "passed": 9,
+      "failed": 0,
+      "method": "Chromium rendered HTML; Python HTTP bridge; simulated localStorage; mocked external search/AI; tested 320px and 390px layouts"
+    }
+  },
+  "totalPassed": 41,
+  "checks": [
+    "Worker JavaScript syntax",
+    "Python source compilation",
+    "New-source discovery through job pipeline",
+    "Evidence-validated machine rules and OR documents",
+    "Grade matching and unknown handling",
+    "Idempotent ingestion",
+    "All-route expiry",
+    "Backend denies private applicant fields",
+    "Atomic quotas",
+    "Daily deduplication",
+    "Desktop and mobile UI",
+    "Save/restore using explicit simulated storage"
+  ],
+  "notVerified": [
+    "Actual Cloudflare account deployment / Wrangler build",
+    "Live Tavily search with a valid key",
+    "Live Workers AI inference",
+    "Real user browser close-and-reopen persistence",
+    "All official sources are reachable",
+    "Cloud scheduler ran at 12:00"
+  ],
+  "limitations": [
+    "No cloud credentials were supplied; external successful responses were mocks.",
+    "Container DNS/network restrictions prevented package installation for a real Wrangler build.",
+    "Browser direct localhost navigation was blocked by environment policy; tests used rendered HTML and a Python HTTP bridge.",
+    "Scanned/image-only and login-protected sources stay pending.",
+    "Machine-validated does not equal human or organizer approval.",
+    "Initial catalog data remains 81 entries; this delivery did not claim newly crawled real awards."
+  ]
+}

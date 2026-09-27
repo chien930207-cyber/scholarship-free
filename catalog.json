@@ -1,0 +1,2097 @@
+{
+  "schemaVersion": 2,
+  "name": "獎學金導航",
+  "generatedAt": "2026-09-19T06:56:53+00:00",
+  "lastCrawlAt": null,
+  "coverageNote": "常備名錄與校別補查分層；資格引擎只使用已建模紀錄。",
+  "statusNote": "最近一次收集嘗試已紀錄；請查看個別來源的成功狀態，非全網即時保證。",
+  "sourceCount": 49,
+  "scholarships": [
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "reviewed",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": true,
+      "id": "niu-moe-lowincome-115-1",
+      "name": "教育部學產基金低收入戶學生助學金",
+      "organizer": "教育部學產基金",
+      "category": "政府助學",
+      "schoolScope": "國立宜蘭大學",
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "公告未載明金額",
+      "period": "115 學年度第 1 學期",
+      "achievementPeriod": "114-2；一年級免附成績單",
+      "start": "2026-09-16T00:00:00+08:00",
+      "deadline": "2026-10-12T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "校內收件",
+      "deadlineNote": "公告只列日期，未載收件鐘點；請提前向生輔組確認辦公時間。",
+      "officialDeadline": null,
+      "summary": "限宜蘭大學已完成本學期低收入戶學雜費減免的在學學生；大一免附前學期成績。",
+      "rules": {
+        "all": [
+          {
+            "field": "school",
+            "op": "eq",
+            "value": "國立宜蘭大學",
+            "label": "就讀國立宜蘭大學"
+          },
+          {
+            "field": "level",
+            "op": "eq",
+            "value": "university",
+            "label": "大學部在學學生"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "economic",
+            "op": "eq",
+            "value": "low",
+            "label": "持有 115 年度低收入戶資格"
+          },
+          {
+            "field": "validProof",
+            "op": "eq",
+            "value": "yes",
+            "label": "持有有效的當年度政府證明"
+          },
+          {
+            "field": "tuitionLow",
+            "op": "eq",
+            "value": "yes",
+            "label": "115-1 低收入戶學雜費減免已辦理合格"
+          },
+          {
+            "any": [
+              {
+                "field": "grade",
+                "op": "eq",
+                "value": 1,
+                "label": "一年級"
+              },
+              {
+                "field": "semesterScore",
+                "op": "gte",
+                "value": 60,
+                "label": "114-2 學業平均至少 60 分",
+                "period": "114-2"
+              }
+            ],
+            "label": "一年級，或前一學期學業平均至少 60 分"
+          },
+          {
+            "field": "noDemerit",
+            "op": "eq",
+            "value": "yes",
+            "label": "未受記過以上處分"
+          },
+          {
+            "field": "extended",
+            "op": "eq",
+            "value": "no",
+            "label": "不是延畢生"
+          },
+          {
+            "field": "repeatClaim",
+            "op": "eq",
+            "value": "no",
+            "label": "沒有因重讀而重複請領"
+          },
+          {
+            "field": "conflictMoe",
+            "op": "eq",
+            "value": "no",
+            "label": "本期不重複申請特教或原住民獎學金"
+          }
+        ]
+      },
+      "documents": [
+        {
+          "key": "form-niu-low",
+          "name": "本案申請表",
+          "detail": "使用 115-1 學產基金低收申請表，簽名後繳交。"
+        },
+        {
+          "key": "transcript-114-2",
+          "name": "114-2 學期成績單",
+          "detail": "非一年級須附；不以全學年平均代替。",
+          "condition": {
+            "field": "grade",
+            "op": "gt",
+            "value": 1,
+            "label": "非一年級"
+          }
+        },
+        {
+          "key": "bank-cover",
+          "name": "本人存摺封面影本",
+          "detail": "第一次申請須附；是否須補件以承辦人通知為準。",
+          "condition": {
+            "field": "firstMoe",
+            "op": "eq",
+            "value": "yes",
+            "label": "第一次申請"
+          }
+        }
+      ],
+      "documentQuestions": [
+        "firstMoe"
+      ],
+      "methods": [
+        {
+          "label": "親送校內",
+          "detail": "將申請表與應備附件親送宜蘭大學生輔組辦公室李先生。",
+          "url": "https://niuosa.niu.edu.tw/p/406-1004-74149%2Cr277.php"
+        }
+      ],
+      "contact": "生輔組李先生｜03-9317966",
+      "notes": [
+        "低收入戶資格及學雜費減免核定是不同條件，兩者都必須成立。"
+      ],
+      "sources": [
+        {
+          "id": "niu_low",
+          "name": "國立宜蘭大學｜生輔組",
+          "url": "https://niuosa.niu.edu.tw/p/406-1004-74149%2Cr277.php",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [],
+      "questions": [],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": "國立宜蘭大學",
+          "availability": "allowed",
+          "deadline": "2026-10-12T23:59:59+08:00",
+          "precision": "date",
+          "note": "公告只列日期，未載收件鐘點；請提前向生輔組確認辦公時間。",
+          "url": "https://niuosa.niu.edu.tw/p/406-1004-74149%2Cr277.php",
+          "method": "將申請表與應備附件親送宜蘭大學生輔組辦公室李先生。",
+          "contact": "生輔組李先生｜03-9317966"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "not_allowed",
+          "deadline": null,
+          "precision": "date",
+          "note": "本案由學校受理；未提供個人向教育部送件的管道。",
+          "url": "https://niuosa.niu.edu.tw/p/406-1004-74149%2Cr277.php",
+          "method": "不可擅自跳過校內推薦。"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度第 1 學期"
+    },
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "reviewed",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": true,
+      "id": "ht-niu-115-1",
+      "name": "行天宮助學金｜宜蘭大學校內／個人申請",
+      "organizer": "行天宮文教發展促進基金會",
+      "category": "宮廟助學",
+      "schoolScope": "國立宜蘭大學",
+      "amountMin": 8000,
+      "amountMax": 10000,
+      "amountText": "NT$ 8,000–10,000",
+      "period": "115 學年度第 1 學期",
+      "achievementPeriod": "本案一般助學未列最低學業平均",
+      "start": null,
+      "deadline": "2026-09-20T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "校內收件",
+      "deadlineNote": "透過宜蘭大學送件須遵守 9/20 校內時限；請確認辦公時間。改走個人申請須依官方個人送件流程，勿重複申請。",
+      "officialDeadline": "2026-09-30T23:59:59+08:00",
+      "summary": "未滿 25 歲，因家庭變故或長期貧困而就學困難者。校內與個人申請的期限及送件方式分開列示。",
+      "rules": {
+        "all": [
+          {
+            "field": "school",
+            "op": "eq",
+            "value": "國立宜蘭大學",
+            "label": "就讀國立宜蘭大學"
+          },
+          {
+            "field": "level",
+            "op": "eq",
+            "value": "university",
+            "label": "大學部在學學生"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "age",
+            "op": "lt",
+            "value": 25,
+            "label": "未滿 25 歲"
+          },
+          {
+            "field": "extended",
+            "op": "eq",
+            "value": "no",
+            "label": "不是延修學生"
+          },
+          {
+            "field": "program",
+            "op": "eq",
+            "value": "day",
+            "label": "非在職進修／推廣教育／軍警校／空中大學"
+          },
+          {
+            "any": [
+              {
+                "field": "extra:ht:family-event",
+                "op": "eq",
+                "value": "yes",
+                "label": "家庭變故導致就學困難"
+              },
+              {
+                "field": "extra:ht:long-poverty",
+                "op": "eq",
+                "value": "yes",
+                "label": "長期貧困導致就學困難"
+              }
+            ],
+            "label": "家庭困難事由：下列任一項成立即可"
+          },
+          {
+            "field": "recentEvent",
+            "op": "eq",
+            "value": "no",
+            "label": "不是需改走急難濟助專案的六個月內變故"
+          },
+          {
+            "field": "htHousehold",
+            "op": "eq",
+            "value": "yes",
+            "label": "符合一戶一名原則，或四名以上符合資格子女的例外名額限制"
+          }
+        ]
+      },
+      "documents": [
+        {
+          "key": "form-ht",
+          "name": "行天宮助學金申請書",
+          "detail": "使用官方本期「1150715 修訂」申請書，完整填寫並簽名。"
+        },
+        {
+          "key": "enrollment-115-1",
+          "name": "在學證明文件（擇一）",
+          "detail": "兩種擇一即可；都必須能證明 115-1 在學。",
+          "mode": "any",
+          "options": [
+            {
+              "key": "enrollment",
+              "name": "115-1 在學證明",
+              "detail": "由學校核發。"
+            },
+            {
+              "key": "student-card",
+              "name": "學生證影本",
+              "detail": "須蓋有 115-1 學期註冊章。"
+            }
+          ]
+        },
+        {
+          "key": "household-3month",
+          "name": "近三個月全戶戶籍謄本",
+          "detail": "須有記事欄；不能直接以未載記事的戶口名簿替代。"
+        },
+        {
+          "key": "bank-cover",
+          "name": "本人存摺封面影本",
+          "detail": "帳戶不得為凍結、警示或結清狀態。"
+        },
+        {
+          "key": "ht-support",
+          "name": "適用的家庭困難佐證",
+          "detail": "依實際情況提供，非每種都必備；若主辦要求補件仍須提供。",
+          "optional": true
+        },
+        {
+          "key": "ht-applicant-excel",
+          "name": "申請者資料 EXCEL",
+          "detail": "自行申請須 E-MAIL 原 EXCEL，不可轉 PDF；不代替紙本寄送。",
+          "routeIds": [
+            "direct"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "label": "學校彙整",
+          "detail": "先洽宜蘭大學生輔軍訓組莊輔導員，備齊文件後送交彙整；本筆不提供其他學校的推定校內期限。",
+          "url": "https://niuosa.niu.edu.tw/p/404-1004-74228.php"
+        },
+        {
+          "label": "自行申請（官方時限）",
+          "detail": "完成本學期註冊後，以 E-MAIL 寄送「申請者資料」 EXCEL，並寄送紙本申請書與證明文件。收件地址與信箱請依本期官方表單；不是只寄電子郵件就完成。",
+          "url": "https://www.ht.org.tw/religion154.htm"
+        }
+      ],
+      "contact": "莊輔導員｜03-9317187",
+      "notes": [
+        "是否屬於辦法認定的就學困難，仍由主辦單位審查。",
+        "主辦大專組截止 9/30，不等於宜蘭大學仍可收件到 9/30。",
+        "其他學校學生請至來源公告區查詢，不套用宜蘭大學期限。"
+      ],
+      "sources": [
+        {
+          "id": "niu_ht",
+          "name": "國立宜蘭大學｜行天宮公告",
+          "url": "https://niuosa.niu.edu.tw/p/404-1004-74228.php",
+          "approvedHash": null
+        },
+        {
+          "id": "ht",
+          "name": "行天宮文教發展促進基金會",
+          "url": "https://www.ht.org.tw/religion153.htm",
+          "approvedHash": null
+        },
+        {
+          "id": "ht_forms",
+          "name": "行天宮｜115-1 申請書表與個人送件",
+          "url": "https://www.ht.org.tw/religion154.htm",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [],
+      "questions": [
+        {
+          "field": "extra:ht:family-event",
+          "label": "家庭變故導致就學困難？",
+          "hint": "父母或主要經濟負擔者死亡、重大傷病、失蹤、服刑、身障，或家庭遭受重大災難。",
+          "type": "yesno",
+          "sourceUrl": "https://www.ht.org.tw/religion153.htm",
+          "revision": "115-1-v1"
+        },
+        {
+          "field": "extra:ht:long-poverty",
+          "label": "長期貧困導致就學困難？",
+          "hint": "單親、隔代教養、特殊境遇或扶養人口眾多等長期貧困家庭。",
+          "type": "yesno",
+          "sourceUrl": "https://www.ht.org.tw/religion153.htm",
+          "revision": "115-1-v1"
+        }
+      ],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": "國立宜蘭大學",
+          "availability": "allowed",
+          "deadline": "2026-09-20T23:59:59+08:00",
+          "precision": "date",
+          "note": "透過宜蘭大學送件須遵守 9/20 校內時限；請確認辦公時間。改走個人申請須依官方個人送件流程，勿重複申請。",
+          "url": "https://niuosa.niu.edu.tw/p/404-1004-74228.php",
+          "method": "先洽宜蘭大學生輔軍訓組莊輔導員，備齊文件後送交彙整；本筆不提供其他學校的推定校內期限。",
+          "contact": "莊輔導員｜03-9317187"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "allowed",
+          "deadline": "2026-09-30T23:59:59+08:00",
+          "precision": "date",
+          "note": "115-1 大專組至 9/30，以郵戳為憑。官網明載可個人申請；學校已代送者請勿重複寄件。",
+          "url": "https://www.ht.org.tw/religion154.htm",
+          "method": "完成本學期註冊後，以 E-MAIL 寄送「申請者資料」 EXCEL，並寄送紙本申請書與證明文件。收件地址與信箱請依本期官方表單；不是只寄電子郵件就完成。",
+          "contact": "行天宮社會關懷服務中心｜0800-217885、02-2502-6606"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度第 1 學期"
+    },
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "pending",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": false,
+      "id": "cht-115-uni",
+      "name": "中華電信方賢齊先生獎學金｜大專組",
+      "organizer": "中華電信基金會",
+      "category": "基金會",
+      "schoolScope": null,
+      "amountMin": 20000,
+      "amountMax": 20000,
+      "amountText": "NT$ 20,000",
+      "period": "115 學年度",
+      "achievementPeriod": "114 學年度全學年（不是只有前一學期）",
+      "start": "2026-07-31T00:00:00+08:00",
+      "deadline": "2026-10-05T23:59:59+08:00",
+      "deadlinePrecision": "minute",
+      "deadlineType": "主辦單位收件",
+      "deadlineNote": "官網列 10/5 24:00 止；大專組採線上申請，高中組另有替代方式。",
+      "officialDeadline": "2026-10-05T23:59:59+08:00",
+      "summary": "前一學年平均 80 分、各科及格且符合清寒條件；大專組另須社會服務紀錄。",
+      "rules": {
+        "all": [
+          {
+            "field": "level",
+            "op": "eq",
+            "value": "university",
+            "label": "就讀大學部"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "grade",
+            "op": "gte",
+            "value": 2,
+            "label": "不含一年級新生"
+          },
+          {
+            "field": "annualScore",
+            "op": "gte",
+            "value": 80,
+            "label": "114 學年度上下學期平均至少 80 分",
+            "period": "114-year"
+          },
+          {
+            "field": "allPassed",
+            "op": "eq",
+            "value": "yes",
+            "label": "114 學年度各科學業成績均及格",
+            "period": "114-year"
+          },
+          {
+            "field": "financialNeed",
+            "op": "eq",
+            "value": "yes",
+            "label": "符合低／中低收入戶或家庭清寒條件"
+          },
+          {
+            "any": [
+              {
+                "field": "volunteerHours",
+                "op": "gte",
+                "value": 20,
+                "label": "114 學年度服務累計 20 小時以上",
+                "period": "114-year"
+              },
+              {
+                "field": "volunteerDays",
+                "op": "gte",
+                "value": 3,
+                "label": "114 學年度服務累計 3 天以上",
+                "period": "114-year"
+              }
+            ],
+            "label": "114 學年度社會服務累計至少 20 小時或 3 天"
+          }
+        ]
+      },
+      "reviewReason": "基本門檻及期限已交叉查找，但本期完整作業須知與各組附件尚未逐項核對，不列入「符合已核對門檻」。",
+      "documents": [
+        {
+          "key": "cht-current-instructions",
+          "name": "完整應備文件待核對",
+          "detail": "請從基金會官網進入本期作業須知及正確組別的申請表；此清單不能直接當成送件清單。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "官方線上申請",
+          "detail": "從中華電信基金會官網選擇正確組別。高中組可依官方說明改以電子郵件或掛號寄送；大專組不可據此推定也可郵寄。",
+          "url": "https://www.chtf.org.tw/project/693"
+        }
+      ],
+      "contact": "中華電信基金會｜02-2344-5766",
+      "notes": [
+        "官網預計錄取 120 名為各組合計，不能拿來當個別組別名額。",
+        "沒有本期有效申請人數，不換算個人錄取機率。"
+      ],
+      "sources": [
+        {
+          "id": "cht",
+          "name": "中華電信基金會",
+          "url": "https://www.chtf.org.tw/project/693",
+          "approvedHash": null
+        },
+        {
+          "id": "dyhu",
+          "name": "德育護理健康學院｜方賢齊公告",
+          "url": "https://dsa.dyhu.edu.tw/p/16-1021-63560.php",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [
+        "基本門檻及期限已交叉查找，但本期完整作業須知與各組附件尚未逐項核對，不列入「符合已核對門檻」。"
+      ],
+      "questions": [],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": null,
+          "availability": "unknown",
+          "deadline": null,
+          "precision": "minute",
+          "note": "尚未取得你的學校收件時限，不以主辦期限代替。",
+          "url": "https://www.chtf.org.tw/project/693",
+          "method": "請洽所屬學校承辦單位。",
+          "contact": "中華電信基金會｜02-2344-5766"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "unknown",
+          "deadline": "2026-10-05T23:59:59+08:00",
+          "precision": "date",
+          "note": "官方期限不代表允許個人送件；申請管道尚待核對。",
+          "url": "https://dsa.dyhu.edu.tw/p/16-1021-63560.php",
+          "method": "不可擅自跳過校內推薦。"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度"
+    },
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "pending",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": false,
+      "id": "cht-115-high",
+      "name": "中華電信方賢齊先生獎學金｜高中組",
+      "organizer": "中華電信基金會",
+      "category": "基金會",
+      "schoolScope": null,
+      "amountMin": 10000,
+      "amountMax": 10000,
+      "amountText": "NT$ 10,000",
+      "period": "115 學年度",
+      "achievementPeriod": "114 學年度全學年（不是只有前一學期）",
+      "start": "2026-07-31T00:00:00+08:00",
+      "deadline": "2026-10-05T23:59:59+08:00",
+      "deadlinePrecision": "minute",
+      "deadlineType": "主辦單位收件",
+      "deadlineNote": "官網列 10/5 24:00 止；大專組採線上申請，高中組另有替代方式。",
+      "officialDeadline": "2026-10-05T23:59:59+08:00",
+      "summary": "前一學年平均 80 分、各科及格且符合清寒條件；大專組另須社會服務紀錄。",
+      "rules": {
+        "all": [
+          {
+            "field": "level",
+            "op": "eq",
+            "value": "high",
+            "label": "就讀高中職"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "grade",
+            "op": "gte",
+            "value": 2,
+            "label": "不含一年級新生"
+          },
+          {
+            "field": "annualScore",
+            "op": "gte",
+            "value": 80,
+            "label": "114 學年度上下學期平均至少 80 分",
+            "period": "114-year"
+          },
+          {
+            "field": "allPassed",
+            "op": "eq",
+            "value": "yes",
+            "label": "114 學年度各科學業成績均及格",
+            "period": "114-year"
+          },
+          {
+            "field": "financialNeed",
+            "op": "eq",
+            "value": "yes",
+            "label": "符合低／中低收入戶或家庭清寒條件"
+          }
+        ]
+      },
+      "reviewReason": "基本門檻及期限已交叉查找，但本期完整作業須知與各組附件尚未逐項核對，不列入「符合已核對門檻」。",
+      "documents": [
+        {
+          "key": "cht-current-instructions",
+          "name": "完整應備文件待核對",
+          "detail": "請從基金會官網進入本期作業須知及正確組別的申請表；此清單不能直接當成送件清單。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "官方線上申請",
+          "detail": "從中華電信基金會官網選擇正確組別。高中組可依官方說明改以電子郵件或掛號寄送；大專組不可據此推定也可郵寄。",
+          "url": "https://www.chtf.org.tw/project/693"
+        }
+      ],
+      "contact": "中華電信基金會｜02-2344-5766",
+      "notes": [
+        "官網預計錄取 120 名為各組合計，不能拿來當個別組別名額。",
+        "沒有本期有效申請人數，不換算個人錄取機率。"
+      ],
+      "sources": [
+        {
+          "id": "cht",
+          "name": "中華電信基金會",
+          "url": "https://www.chtf.org.tw/project/693",
+          "approvedHash": null
+        },
+        {
+          "id": "dyhu",
+          "name": "德育護理健康學院｜方賢齊公告",
+          "url": "https://dsa.dyhu.edu.tw/p/16-1021-63560.php",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [
+        "基本門檻及期限已交叉查找，但本期完整作業須知與各組附件尚未逐項核對，不列入「符合已核對門檻」。"
+      ],
+      "questions": [],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": null,
+          "availability": "unknown",
+          "deadline": null,
+          "precision": "minute",
+          "note": "尚未取得你的學校收件時限，不以主辦期限代替。",
+          "url": "https://www.chtf.org.tw/project/693",
+          "method": "請洽所屬學校承辦單位。",
+          "contact": "中華電信基金會｜02-2344-5766"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "unknown",
+          "deadline": "2026-10-05T23:59:59+08:00",
+          "precision": "date",
+          "note": "官方期限不代表允許個人送件；申請管道尚待核對。",
+          "url": "https://dsa.dyhu.edu.tw/p/16-1021-63560.php",
+          "method": "不可擅自跳過校內推薦。"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度"
+    },
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "pending",
+      "reviewValidDays": 7,
+      "conflicts": [
+        "不得兼領其他社福團體獎助學金；勾選多案不代表可同時領取。"
+      ],
+      "documentsComplete": false,
+      "id": "dashuo-115",
+      "name": "大碩清寒獎助學金",
+      "organizer": "大碩青年關懷基金會",
+      "category": "基金會",
+      "schoolScope": null,
+      "amountMin": 10000,
+      "amountMax": 10000,
+      "amountText": "NT$ 10,000",
+      "period": "115 學年度",
+      "achievementPeriod": "申請前一學期",
+      "start": null,
+      "deadline": "2026-10-31T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "主辦單位收件（待核對）",
+      "deadlineNote": "多校公告為 10/31，但另有轉知頁日期不同；必須向主辦確認，不以較晚期限推定有效。",
+      "officialDeadline": "2026-10-31T23:59:59+08:00",
+      "reviewReason": "校方轉知資料的日期與清寒證明措辭有差異；本期主辦原始簡章與收件認定待核對。",
+      "summary": "高中職／大學日間部、成績 80 分及低收入戶等條件；線上報名與紙本寄送都需要。",
+      "rules": {
+        "all": [
+          {
+            "field": "level",
+            "op": "in",
+            "value": [
+              "high",
+              "university"
+            ],
+            "label": "高中職或大學部"
+          },
+          {
+            "field": "program",
+            "op": "eq",
+            "value": "day",
+            "label": "日間部"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "nationality",
+            "op": "eq",
+            "value": "roc",
+            "label": "本國國民"
+          },
+          {
+            "field": "publicFunded",
+            "op": "eq",
+            "value": "no",
+            "label": "不是公費生"
+          },
+          {
+            "field": "semesterScore",
+            "op": "gte",
+            "value": 80,
+            "label": "前一學期學業平均至少 80 分",
+            "period": "114-2"
+          },
+          {
+            "field": "goodConduct",
+            "op": "eq",
+            "value": "yes",
+            "label": "操行品德優良"
+          },
+          {
+            "field": "economic",
+            "op": "eq",
+            "value": "low",
+            "label": "具低收入戶資格，非僅村里長清寒證明"
+          },
+          {
+            "field": "validProof",
+            "op": "eq",
+            "value": "yes",
+            "label": "持有有效當年度政府證明"
+          },
+          {
+            "field": "militarySubsidy",
+            "op": "eq",
+            "value": "no",
+            "label": "未領軍公教子女教育補助"
+          },
+          {
+            "field": "otherSocialAward",
+            "op": "eq",
+            "value": "no",
+            "label": "未領其他社福團體獎助學金"
+          }
+        ]
+      },
+      "documents": [
+        {
+          "key": "form-dashuo",
+          "name": "大碩本期申請表",
+          "detail": "表格版本、全部附件及是否須低收入戶卡正本核驗均待主辦確認。"
+        },
+        {
+          "key": "transcript-114-2",
+          "name": "前一學期成績單",
+          "detail": "校方公告要求正本一份；確認學期。"
+        },
+        {
+          "key": "household-copy",
+          "name": "戶口名簿／戶籍謄本",
+          "detail": "校方公告為影本或謄本一份。",
+          "mode": "any",
+          "options": [
+            {
+              "key": "book",
+              "name": "戶口名簿影本",
+              "detail": "依本期規定確認格式。"
+            },
+            {
+              "key": "transcript",
+              "name": "戶籍謄本",
+              "detail": "依本期規定確認效期。"
+            }
+          ]
+        },
+        {
+          "key": "low-proof",
+          "name": "低收入戶卡／政府證明",
+          "detail": "各轉知頁用語不同，應向主辦確認適用文件。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "線上＋紙本",
+          "detail": "校方公告要求完成 2026 年報名表，另寄紙本至臺北市中正區博愛路 60 號 5 樓 B 室，大碩青年關懷基金會。須先核對主辦本期地址、表單與截止認定。",
+          "url": "https://www.ngsh.tp.edu.tw/p/406-1000-26232%2Cr14.php"
+        }
+      ],
+      "contact": "校方轉知聯絡｜02-2331-5551 分機 384",
+      "notes": [],
+      "sources": [
+        {
+          "id": "nangang",
+          "name": "臺北市立南港高中｜大碩公告",
+          "url": "https://www.ngsh.tp.edu.tw/p/406-1000-26232%2Cr14.php",
+          "approvedHash": null
+        },
+        {
+          "id": "ykvs",
+          "name": "鶯歌工商｜獎助學金訊息",
+          "url": "https://www.ykvs.ntpc.edu.tw/p/403-1000-231.php",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [
+        "校方轉知資料的日期與清寒證明措辭有差異；本期主辦原始簡章與收件認定待核對。"
+      ],
+      "questions": [],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": null,
+          "availability": "unknown",
+          "deadline": null,
+          "precision": "date",
+          "note": "尚未取得你的學校收件時限，不以主辦期限代替。",
+          "url": "https://www.ngsh.tp.edu.tw/p/406-1000-26232%2Cr14.php",
+          "method": "請洽所屬學校承辦單位。",
+          "contact": "校方轉知聯絡｜02-2331-5551 分機 384"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "unknown",
+          "deadline": "2026-10-31T23:59:59+08:00",
+          "precision": "date",
+          "note": "官方期限不代表允許個人送件；申請管道尚待核對。",
+          "url": "https://www.ykvs.ntpc.edu.tw/p/403-1000-231.php",
+          "method": "不可擅自跳過校內推薦。"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度"
+    },
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "pending",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": false,
+      "id": "taichung-indigenous-115-1",
+      "name": "臺中市原住民學生獎學金",
+      "organizer": "臺中市政府原住民族事務委員會",
+      "category": "地方政府",
+      "schoolScope": null,
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "依組別核發",
+      "period": "115 學年度第 1 學期",
+      "achievementPeriod": "依組別；清寒與優秀獎學金不同",
+      "start": "2026-09-01T00:00:00+08:00",
+      "deadline": "2026-09-30T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "主辦單位期限",
+      "deadlineNote": "校內彙整日期可能更早，尚未核對各校期限。",
+      "officialDeadline": "2026-09-30T23:59:59+08:00",
+      "reviewReason": "尚未拆分清寒／優秀組別、各組完整門檻、文件及學校受理期限，因此不作肯定資格判定。",
+      "summary": "日間部在學、具原住民身分且設籍臺中市滿 4 個月；另依組別審核成績與家庭條件。",
+      "rules": {
+        "all": [
+          {
+            "field": "city",
+            "op": "eq",
+            "value": "臺中市",
+            "label": "戶籍設於臺中市"
+          },
+          {
+            "field": "residenceMonths",
+            "op": "gte",
+            "value": 4,
+            "label": "設籍臺中市滿 4 個月"
+          },
+          {
+            "field": "indigenous",
+            "op": "eq",
+            "value": "yes",
+            "label": "具有原住民身分"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "具有正式在學學籍"
+          },
+          {
+            "field": "program",
+            "op": "eq",
+            "value": "day",
+            "label": "日間部學生"
+          }
+        ]
+      },
+      "documents": [
+        {
+          "key": "taichung-pending",
+          "name": "依組別確認申請文件",
+          "detail": "完整規定尚未核對，不可把本筆當成確定可送件清單。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "查看政府公告",
+          "detail": "先確認申請組別與所屬學校收件流程。",
+          "url": "https://www.ipd.taichung.gov.tw/3339757/post"
+        }
+      ],
+      "contact": "臺中市政府原民會｜04-22289111 分機 50106",
+      "notes": [
+        "原住民身分為選填；不提供時，本案維持待確認，不自動推定。"
+      ],
+      "sources": [
+        {
+          "id": "taichung",
+          "name": "臺中市原住民族事務委員會",
+          "url": "https://www.ipd.taichung.gov.tw/3339757/post",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [
+        "尚未拆分清寒／優秀組別、各組完整門檻、文件及學校受理期限，因此不作肯定資格判定。"
+      ],
+      "questions": [],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": null,
+          "availability": "unknown",
+          "deadline": null,
+          "precision": "date",
+          "note": "尚未取得你的學校收件時限，不以主辦期限代替。",
+          "url": "https://www.ipd.taichung.gov.tw/3339757/post",
+          "method": "請洽所屬學校承辦單位。",
+          "contact": "臺中市政府原民會｜04-22289111 分機 50106"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "unknown",
+          "deadline": "2026-09-30T23:59:59+08:00",
+          "precision": "date",
+          "note": "官方期限不代表允許個人送件；申請管道尚待核對。",
+          "url": "https://www.ipd.taichung.gov.tw/3339757/post",
+          "method": "不可擅自跳過校內推薦。"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度第 1 學期"
+    },
+    {
+      "terms": [
+        "115-1"
+      ],
+      "verifiedAt": "2026-09-19T00:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "pending",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": false,
+      "id": "nkuht-campus-115-1",
+      "name": "高雄餐旅大學校內各項獎助學金（公告入口）",
+      "organizer": "國立高雄餐旅大學",
+      "category": "校內獎助",
+      "schoolScope": "國立高雄餐旅大學",
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "依各項辦法",
+      "period": "115 學年度第 1 學期",
+      "achievementPeriod": "各項不同",
+      "start": "2026-08-31T00:00:00+08:00",
+      "deadline": "2026-09-18T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "校內初審",
+      "deadlineNote": "截至本版查核日 9/19，公告所列 9/18 已截止。",
+      "officialDeadline": null,
+      "reviewReason": "此為多項獎助學金公告入口，尚未逐案建檔；保留於歷史來源，不作資格推薦。",
+      "summary": "此筆示範截止後自動排除；不是目前可以申請的獎學金。",
+      "rules": {
+        "all": [
+          {
+            "field": "school",
+            "op": "eq",
+            "value": "國立高雄餐旅大學",
+            "label": "就讀國立高雄餐旅大學"
+          }
+        ]
+      },
+      "documents": [],
+      "methods": [
+        {
+          "label": "歷史公告",
+          "detail": "查閱原始公告。",
+          "url": "https://student.nkuht.edu.tw/p/404-1005-4954.php"
+        }
+      ],
+      "contact": "請洽校方課外活動指導組",
+      "notes": [],
+      "sources": [
+        {
+          "id": "nkuht",
+          "name": "高雄餐旅大學｜校內外獎助學金",
+          "url": "https://student.nkuht.edu.tw/p/404-1005-4954.php",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [
+        "此為多項獎助學金公告入口，尚未逐案建檔；保留於歷史來源，不作資格推薦。"
+      ],
+      "questions": [],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "school": "國立高雄餐旅大學",
+          "availability": "allowed",
+          "deadline": "2026-09-18T23:59:59+08:00",
+          "precision": "date",
+          "note": "截至本版查核日 9/19，公告所列 9/18 已截止。",
+          "url": "https://student.nkuht.edu.tw/p/404-1005-4954.php",
+          "method": "查閱原始公告。",
+          "contact": "請洽校方課外活動指導組"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "not_applicable",
+          "deadline": null,
+          "precision": "date",
+          "note": "本筆僅為校內聯合公告，不是各獎項的個人申請案件；不得以此推定可延長校內時限。",
+          "url": "https://student.nkuht.edu.tw/p/404-1005-4954.php",
+          "method": "不可擅自跳過校內推薦。"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 學年度第 1 學期"
+    },
+    {
+      "id": "hakka-research-115",
+      "name": "客家信仰文化研究生獎學金",
+      "organizer": "財團法人褒忠亭義民中學財團",
+      "category": "跨校獎助",
+      "schoolScope": "不限學校",
+      "terms": [
+        "115-1"
+      ],
+      "period": "115 年度／115-1 申請期",
+      "achievementPeriod": "依各項條件標示；不混用學期／學年平均",
+      "verifiedAt": "2026-09-19T14:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "reviewed",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": true,
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "最高 200,000 元，分期核發",
+      "summary": "以義民爺信仰及客家傳統文化為題的研究計畫。",
+      "start": "2026-04-14T00:00:00+08:00",
+      "deadline": "2026-12-31T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "主辦收件",
+      "deadlineNote": "日期只代表來源列示時程；不等於已確認你的學校收件期限或個人資格。",
+      "officialDeadline": "2026-12-31T23:59:59+08:00",
+      "rules": {
+        "all": [
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "level",
+            "op": "in",
+            "value": [
+              "master",
+              "doctor"
+            ],
+            "label": "碩士或博士在學生"
+          },
+          {
+            "field": "extra:hakka-research:taiwan",
+            "op": "eq",
+            "value": "yes",
+            "label": "就讀臺灣的大學校院研究所"
+          },
+          {
+            "field": "extra:hakka-research:topic",
+            "op": "eq",
+            "value": "yes",
+            "label": "論文研究義民爺信仰及客家傳統文化"
+          },
+          {
+            "field": "extra:hakka-research:approved",
+            "op": "eq",
+            "value": "yes",
+            "label": "計畫已獲指導教授核可，並可取得推薦書"
+          },
+          {
+            "field": "extra:hakka-research:report",
+            "op": "eq",
+            "value": "yes",
+            "label": "可按辦法提出期中報告，接受分期審查與核發"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "field": "extra:hakka-research:taiwan",
+          "type": "yesno",
+          "label": "就讀臺灣的大學校院研究所？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:hakka-research:topic",
+          "type": "yesno",
+          "label": "論文研究義民爺信仰及客家傳統文化？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:hakka-research:approved",
+          "type": "yesno",
+          "label": "計畫已獲指導教授核可，並可取得推薦書？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:hakka-research:report",
+          "type": "yesno",
+          "label": "可按辦法提出期中報告，接受分期審查與核發？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "unmodeledConditions": [],
+      "documents": [
+        {
+          "key": "hakka-recommend",
+          "name": "指導教授推薦書",
+          "detail": "由指導教授出具。"
+        },
+        {
+          "key": "hakka-proposal",
+          "name": "核可論文計畫書",
+          "detail": "須經指導教授核可。"
+        },
+        {
+          "key": "student-card",
+          "name": "研究所在學學生證影本",
+          "detail": "確認目前在學；本公告未列在學證明作替代文件。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "電子郵件及紙本郵寄",
+          "detail": "電子檔寄 ym.mm@msa.hinet.net，另將紙本寄 303 新竹縣新埔鎮義民路三段360號，褒忠亭義民中學財團。兩者都要送；收件時刻另詢 03-5509931。",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "sources": [
+        {
+          "id": "base-hakka-research",
+          "name": "教育部圓夢助學網",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4",
+          "approvedHash": null
+        }
+      ],
+      "routes": [
+        {
+          "id": "direct",
+          "kind": "direct",
+          "availability": "allowed",
+          "label": "自行申請（官方時限）",
+          "start": "2026-04-14T00:00:00+08:00",
+          "deadline": "2026-12-31T23:59:59+08:00",
+          "precision": "date",
+          "note": "日期只代表來源列示時程；不等於已確認你的學校收件期限或個人資格。",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=367921C6BC7A934E&sms=0A01A72AAB9E5CD4",
+          "method": "電子檔寄 ym.mm@msa.hinet.net，另將紙本寄 303 新竹縣新埔鎮義民路三段360號，褒忠亭義民中學財團。兩者都要送；收件時刻另詢 03-5509931。"
+        }
+      ],
+      "reviewReason": "已將本次查閱之公開公告列明條件建模；主辦核驗與來源變更仍須另行確認。",
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 年度／115-1 申請期",
+      "notes": []
+    },
+    {
+      "id": "changyi-115",
+      "name": "昌益慈善基金會助學金",
+      "organizer": "昌益慈善基金會",
+      "category": "跨校獎助",
+      "schoolScope": "不限學校",
+      "terms": [
+        "115-1"
+      ],
+      "period": "115 年度／115-1 申請期",
+      "achievementPeriod": "依各項條件標示；不混用學期／學年平均",
+      "verifiedAt": "2026-09-19T14:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "reviewed",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": true,
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "最高 5,000 元",
+      "summary": "政府列冊低收入戶、日間大學部學生助學。",
+      "start": "2026-09-01T00:00:00+08:00",
+      "deadline": "2026-09-30T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "主辦收件",
+      "deadlineNote": "自行郵寄，郵戳截止；自行列印之正本須依規定加蓋發證機關章。",
+      "officialDeadline": "2026-09-30T23:59:59+08:00",
+      "rules": {
+        "all": [
+          {
+            "field": "nationality",
+            "op": "eq",
+            "value": "roc",
+            "label": "具中華民國國籍"
+          },
+          {
+            "field": "level",
+            "op": "eq",
+            "value": "university",
+            "label": "大學部"
+          },
+          {
+            "field": "program",
+            "op": "eq",
+            "value": "day",
+            "label": "一般日間部"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "extended",
+            "op": "eq",
+            "value": "no",
+            "label": "非延畢"
+          },
+          {
+            "field": "economic",
+            "op": "eq",
+            "value": "low",
+            "label": "政府列冊低收入戶"
+          },
+          {
+            "field": "validProof",
+            "op": "eq",
+            "value": "yes",
+            "label": "115 年有效政府證明"
+          },
+          {
+            "field": "grade",
+            "op": "gt",
+            "value": 1,
+            "label": "大一上不受理"
+          },
+          {
+            "field": "publicFunded",
+            "op": "eq",
+            "value": "no",
+            "label": "非公費生"
+          },
+          {
+            "field": "semesterScore",
+            "op": "gte",
+            "value": 80,
+            "label": "114-2 學業平均至少 80",
+            "period": "114-2"
+          },
+          {
+            "field": "extra:changyi:member",
+            "op": "eq",
+            "value": "yes",
+            "label": "申請人列在政府低收入戶證明的成員欄內"
+          },
+          {
+            "field": "extra:changyi:conduct",
+            "op": "gte",
+            "value": 80,
+            "label": "114-2 操行成績（百分制）"
+          },
+          {
+            "field": "extra:changyi:school",
+            "op": "eq",
+            "value": "yes",
+            "label": "就讀國內公私立大學、學院、科大或技術學院，非公告排除學制"
+          },
+          {
+            "field": "extra:changyi:graduate",
+            "op": "eq",
+            "value": "yes",
+            "label": "不屬公告排除的應屆畢業生身分"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "field": "extra:changyi:member",
+          "type": "yesno",
+          "label": "申請人列在政府低收入戶證明的成員欄內？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:changyi:conduct",
+          "type": "number",
+          "label": "114-2 操行成績（百分制）",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "field": "extra:changyi:school",
+          "type": "yesno",
+          "label": "就讀國內公私立大學、學院、科大或技術學院，非公告排除學制？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:changyi:graduate",
+          "type": "yesno",
+          "label": "不屬公告排除的應屆畢業生身分？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "unmodeledConditions": [],
+      "documents": [
+        {
+          "key": "cy-form",
+          "name": "昌益助學金申請表",
+          "detail": "使用本期基金會表單。"
+        },
+        {
+          "key": "low-proof",
+          "name": "政府低收入戶證明正本",
+          "detail": "需列申請人；不接受審查結果通知書、衛福部或臺北通下載文件；自行列印須發證單位核章。"
+        },
+        {
+          "key": "household",
+          "name": "戶籍文件",
+          "detail": "本組任一有效文件即可；不同獎學金格式不可互換。",
+          "mode": "any",
+          "options": [
+            {
+              "key": "book",
+              "name": "戶口名簿影本",
+              "detail": "資料須可辨識。"
+            },
+            {
+              "key": "registry",
+              "name": "戶籍謄本影本",
+              "detail": "資料須可辨識。"
+            }
+          ]
+        },
+        {
+          "key": "enrollment",
+          "name": "在學證明正本",
+          "detail": "證明當期正式學籍；此案學生證不等於可替代在學證明。"
+        },
+        {
+          "key": "transcript-114-2",
+          "name": "114-2 學業及操行成績正本",
+          "detail": "GPA 附校方正式對照；列印資料須依規定核章。"
+        },
+        {
+          "key": "bank-cover",
+          "name": "本人銀行／郵局帳戶封面影本",
+          "detail": "清晰、本人名義，並簽名及蓋印章。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "自行掛號郵寄",
+          "detail": "郵戳於 2026/09/30 以前；30069 新竹市公道五路二段415號12樓，昌益慈善基金會獎學金審核小組收。",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "sources": [
+        {
+          "id": "base-changyi",
+          "name": "教育部圓夢助學網",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4",
+          "approvedHash": null
+        }
+      ],
+      "routes": [
+        {
+          "id": "direct",
+          "kind": "direct",
+          "availability": "allowed",
+          "label": "自行申請（官方時限）",
+          "start": "2026-09-01T00:00:00+08:00",
+          "deadline": "2026-09-30T23:59:59+08:00",
+          "precision": "date",
+          "note": "自行郵寄，郵戳截止；自行列印之正本須依規定加蓋發證機關章。",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=F29A02A9D36C47F0&sms=0A01A72AAB9E5CD4",
+          "method": "郵戳於 2026/09/30 以前；30069 新竹市公道五路二段415號12樓，昌益慈善基金會獎學金審核小組收。"
+        }
+      ],
+      "reviewReason": "已將本次查閱之公開公告列明條件建模；主辦核驗與來源變更仍須另行確認。",
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 年度／115-1 申請期",
+      "notes": []
+    },
+    {
+      "id": "yinshun-115",
+      "name": "印順文教基金會論文獎學金",
+      "organizer": "印順文教基金會",
+      "category": "跨校獎助",
+      "schoolScope": "不限學校",
+      "terms": [
+        "115-1"
+      ],
+      "period": "115 年度／115-1 申請期",
+      "achievementPeriod": "依各項條件標示；不混用學期／學年平均",
+      "verifiedAt": "2026-09-19T14:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "reviewed",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": true,
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "8,000–30,000 元",
+      "summary": "在學學生以原創中文佛學論文提出申請。",
+      "start": "2026-05-26T00:00:00+08:00",
+      "deadline": "2026-09-25T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "主辦收件",
+      "deadlineNote": "掛號郵寄以郵戳為憑，另寄論文 PDF；兩者不是擇一。",
+      "officialDeadline": "2026-09-25T23:59:59+08:00",
+      "rules": {
+        "all": [
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "申請時在學、未畢業"
+          },
+          {
+            "field": "level",
+            "op": "in",
+            "value": [
+              "university",
+              "junior",
+              "master",
+              "doctor"
+            ],
+            "label": "大專或研究所學制"
+          },
+          {
+            "field": "extra:yinshun:institution",
+            "op": "eq",
+            "value": "yes",
+            "label": "就讀國內公私立大專／研究所或公告所列佛教研修院所"
+          },
+          {
+            "field": "extra:yinshun:original",
+            "op": "eq",
+            "value": "yes",
+            "label": "論文為本人原創完整作品，非譯稿、代筆、舊獲獎稿，且未一稿多投"
+          },
+          {
+            "field": "extra:yinshun:thesis",
+            "op": "eq",
+            "value": "yes",
+            "label": "若取自學位論文，已充分改寫為獨立完整論文；或本稿非取自學位論文"
+          },
+          {
+            "field": "extra:yinshun:format",
+            "op": "eq",
+            "value": "yes",
+            "label": "中文佛學論文 8,000–30,000 字，引用、注釋、參考文獻與匿名格式皆可符合"
+          },
+          {
+            "field": "extra:yinshun:rights",
+            "op": "eq",
+            "value": "yes",
+            "label": "了解入選作品可被公益刊載／出版且不另付稿酬，必要時須自行修訂"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "field": "extra:yinshun:institution",
+          "type": "yesno",
+          "label": "就讀國內公私立大專／研究所或公告所列佛教研修院所？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yinshun:original",
+          "type": "yesno",
+          "label": "論文為本人原創完整作品，非譯稿、代筆、舊獲獎稿，且未一稿多投？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yinshun:thesis",
+          "type": "yesno",
+          "label": "若取自學位論文，已充分改寫為獨立完整論文；或本稿非取自學位論文？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yinshun:format",
+          "type": "yesno",
+          "label": "中文佛學論文 8,000–30,000 字，引用、注釋、參考文獻與匿名格式皆可符合？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yinshun:rights",
+          "type": "yesno",
+          "label": "了解入選作品可被公益刊載／出版且不另付稿酬，必要時須自行修訂？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "unmodeledConditions": [],
+      "documents": [
+        {
+          "key": "ys-form",
+          "name": "印順基金會申請資料表",
+          "detail": "使用主辦表單。"
+        },
+        {
+          "key": "ys-bio",
+          "name": "800 字以上自傳",
+          "detail": "含學佛經歷，A4 電腦繕打。"
+        },
+        {
+          "key": "enrollment",
+          "name": "正式在學佐證",
+          "detail": "本組任一有效文件即可；不同獎學金格式不可互換。",
+          "mode": "any",
+          "options": [
+            {
+              "key": "enrollment",
+              "name": "在學證明",
+              "detail": "當期在學。"
+            },
+            {
+              "key": "student-card",
+              "name": "已註冊學生證影本",
+              "detail": "須證明完成當期註冊。"
+            }
+          ]
+        },
+        {
+          "key": "transcript-prev",
+          "name": "前一學期成績單",
+          "detail": "新入學第一年免附。",
+          "condition": {
+            "field": "grade",
+            "op": "gt",
+            "value": 1,
+            "label": "非一年級"
+          }
+        },
+        {
+          "key": "ys-paper",
+          "name": "中文佛學論文：紙本兩份＋PDF",
+          "detail": "8,000–30,000 字；封面及內文不列作者姓名。紙本與電子檔皆必要。"
+        }
+      ],
+      "methods": [
+        {
+          "label": "掛號郵寄＋PDF 電子檔",
+          "detail": "2026/09/25 郵戳為憑，寄 302048 新竹縣竹北市縣政九路28巷7號 印順文教基金會，信封註明申請獎學金。論文 PDF 另寄 service@yinshun.org.tw。",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "sources": [
+        {
+          "id": "base-yinshun",
+          "name": "教育部圓夢助學網",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4",
+          "approvedHash": null
+        }
+      ],
+      "routes": [
+        {
+          "id": "direct",
+          "kind": "direct",
+          "availability": "allowed",
+          "label": "自行申請（官方時限）",
+          "start": "2026-05-26T00:00:00+08:00",
+          "deadline": "2026-09-25T23:59:59+08:00",
+          "precision": "date",
+          "note": "掛號郵寄以郵戳為憑，另寄論文 PDF；兩者不是擇一。",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=228F1362E45E0B89&sms=0A01A72AAB9E5CD4",
+          "method": "2026/09/25 郵戳為憑，寄 302048 新竹縣竹北市縣政九路28巷7號 印順文教基金會，信封註明申請獎學金。論文 PDF 另寄 service@yinshun.org.tw。"
+        }
+      ],
+      "reviewReason": "已將本次查閱之公開公告列明條件建模；主辦核驗與來源變更仍須另行確認。",
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 年度／115-1 申請期",
+      "notes": []
+    },
+    {
+      "id": "yonglin-115",
+      "name": "永齡銘日希望獎助學金",
+      "organizer": "永齡教育基金會",
+      "category": "跨校獎助",
+      "schoolScope": "不限學校",
+      "terms": [
+        "115-1"
+      ],
+      "period": "115 年度／115-1 申請期",
+      "achievementPeriod": "依各項條件標示；不混用學期／學年平均",
+      "verifiedAt": "2026-09-19T14:00:00+08:00",
+      "lastCheckedAt": null,
+      "status": "reviewed",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": true,
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "10,000／50,000／100,000 元（依組別）",
+      "summary": "曾在永齡希望小學就讀的校友升學支持。",
+      "start": "2026-09-01T00:00:00+08:00",
+      "deadline": "2026-11-30T17:00:00+08:00",
+      "deadlinePrecision": "minute",
+      "deadlineType": "主辦收件",
+      "deadlineNote": "日期只代表來源列示時程；不等於已確認你的學校收件期限或個人資格。",
+      "officialDeadline": "2026-11-30T17:00:00+08:00",
+      "rules": {
+        "all": [
+          {
+            "field": "nationality",
+            "op": "eq",
+            "value": "roc",
+            "label": "中華民國國籍"
+          },
+          {
+            "field": "enrolled",
+            "op": "eq",
+            "value": "yes",
+            "label": "目前正式在學"
+          },
+          {
+            "field": "extended",
+            "op": "eq",
+            "value": "no",
+            "label": "正常修業年限內，非延修"
+          },
+          {
+            "field": "level",
+            "op": "in",
+            "value": [
+              "university",
+              "junior",
+              "master",
+              "doctor"
+            ],
+            "label": "大專以上在學生"
+          },
+          {
+            "field": "extra:yonglin:alumni",
+            "op": "eq",
+            "value": "yes",
+            "label": "有曾就讀永齡希望小學的紀錄"
+          },
+          {
+            "field": "extra:yonglin:program",
+            "op": "eq",
+            "value": "yes",
+            "label": "非五專前三年、空中大學、在職專班或學分班，且具有正式學籍"
+          },
+          {
+            "field": "extra:yonglin:score",
+            "op": "eq",
+            "value": "yes",
+            "label": "依公告計算的 114 學年上下學期學業與操行加總平均達 60 分"
+          },
+          {
+            "field": "extra:yonglin:consent",
+            "op": "eq",
+            "value": "yes",
+            "label": "可依辦法參與基金會活動，並同意相關照片影片用於非營利宣傳"
+          },
+          {
+            "field": "extra:yonglin:bank",
+            "op": "eq",
+            "value": "yes",
+            "label": "可用本人帳戶收款，並親自簽署領款文件"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "field": "extra:yonglin:alumni",
+          "type": "yesno",
+          "label": "有曾就讀永齡希望小學的紀錄？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yonglin:program",
+          "type": "yesno",
+          "label": "非五專前三年、空中大學、在職專班或學分班，且具有正式學籍？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yonglin:score",
+          "type": "yesno",
+          "label": "依公告計算的 114 學年上下學期學業與操行加總平均達 60 分？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yonglin:consent",
+          "type": "yesno",
+          "label": "可依辦法參與基金會活動，並同意相關照片影片用於非營利宣傳？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yonglin:bank",
+          "type": "yesno",
+          "label": "可用本人帳戶收款，並親自簽署領款文件？",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4"
+        },
+        {
+          "field": "extra:yonglin:returning",
+          "type": "yesno",
+          "label": "曾獲得本獎助學金？（僅決定學習歷程題目）",
+          "revision": "115-v3-1",
+          "sourceUrl": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4"
+        }
+      ],
+      "unmodeledConditions": [],
+      "documents": [
+        {
+          "key": "yl-form",
+          "name": "永齡線上申請基本資料",
+          "detail": "於正式獎學金網站填寫及上傳。"
+        },
+        {
+          "key": "id-copy",
+          "name": "身分證正反面影本",
+          "detail": "僅提供給主辦，本網站不收集影像。"
+        },
+        {
+          "key": "enrollment",
+          "name": "當期在學佐證",
+          "detail": "本組任一有效文件即可；不同獎學金格式不可互換。",
+          "mode": "any",
+          "options": [
+            {
+              "key": "enrollment",
+              "name": "正式在學證明",
+              "detail": "需校章或電子簽章。"
+            },
+            {
+              "key": "student-card",
+              "name": "學生證正反面影本",
+              "detail": "須有當學期註冊章。"
+            }
+          ]
+        },
+        {
+          "key": "yl-score",
+          "name": "114 學年上下學期學業與操行成績證明",
+          "detail": "由校方核發或核章；大一／碩一／博一新生用前一學歷成績。"
+        },
+        {
+          "key": "yl-consent",
+          "name": "個人資料使用同意書",
+          "detail": "親筆簽名後清晰掃描或拍照。"
+        },
+        {
+          "key": "yl-story",
+          "name": "學習歷程分享",
+          "detail": "首次申請寫我與永齡希望小學的回憶；曾獲助寫我的年度成長日記。依身分選題，不得任意替換。"
+        },
+        {
+          "key": "yl-extra",
+          "name": "特殊表現佐證",
+          "detail": "非必備，不提供不影響基本審查；續領者留意成果期間。",
+          "optional": true
+        }
+      ],
+      "methods": [
+        {
+          "label": "線上申請",
+          "detail": "2026/11/30 17:00 前完成所有欄位及上傳。截止後不依賴補件；以基金會受理規定為準。",
+          "url": "https://edu.yonglin.org.tw/scholarship"
+        }
+      ],
+      "sources": [
+        {
+          "id": "base-yonglin",
+          "name": "教育部圓夢助學網",
+          "url": "https://www.edu.tw/helpdreams/Grants_Content.aspx?n=2BBF7170197CE7D3&s=991942EC02D662F5&sms=0A01A72AAB9E5CD4",
+          "approvedHash": null
+        }
+      ],
+      "routes": [
+        {
+          "id": "direct",
+          "kind": "direct",
+          "availability": "allowed",
+          "label": "自行申請（官方時限）",
+          "start": "2026-09-01T00:00:00+08:00",
+          "deadline": "2026-11-30T17:00:00+08:00",
+          "precision": "minute",
+          "note": "日期只代表來源列示時程；不等於已確認你的學校收件期限或個人資格。",
+          "url": "https://edu.yonglin.org.tw/scholarship",
+          "method": "2026/11/30 17:00 前完成所有欄位及上傳。截止後不依賴補件；以基金會受理規定為準。"
+        }
+      ],
+      "reviewReason": "已將本次查閱之公開公告列明條件建模；主辦核驗與來源變更仍須另行確認。",
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "115 年度／115-1 申請期",
+      "notes": []
+    },
+    {
+      "terms": [
+        "114-2"
+      ],
+      "verifiedAt": "2026-09-19T15:47:32+08:00",
+      "lastCheckedAt": null,
+      "status": "pending",
+      "reviewValidDays": 7,
+      "conflicts": [],
+      "documentsComplete": false,
+      "id": "daya-114-2-pending",
+      "name": "大雅區 114 學年度第 2 學期高中職暨大專院校獎學金",
+      "organizer": "臺中市大雅區公所",
+      "category": "地方政府",
+      "schoolScope": "跨校；限大雅戶籍",
+      "amountMin": null,
+      "amountMax": null,
+      "amountText": "依當期公告",
+      "period": "114 學年度第 2 學期",
+      "achievementPeriod": "114-2",
+      "start": "2026-09-14T00:00:00+08:00",
+      "deadline": "2026-09-24T23:59:59+08:00",
+      "deadlinePrecision": "date",
+      "deadlineType": "公所收件",
+      "deadlineNote": "大雅區公所1樓人文課受理；日期未載鐘點，不表示收件至午夜。",
+      "officialDeadline": "2026-09-24T23:59:59+08:00",
+      "summary": "名稱是 114 下學期，但於 115/9/14至9/24受理。不因目前在學學期為115-1而排除。",
+      "rules": {
+        "all": [
+          {
+            "field": "city",
+            "op": "eq",
+            "value": "臺中市",
+            "label": "戶籍臺中市"
+          },
+          {
+            "field": "district",
+            "op": "eq",
+            "value": "大雅區",
+            "label": "戶籍大雅區"
+          },
+          {
+            "any": [
+              {
+                "all": [
+                  {
+                    "field": "level",
+                    "op": "eq",
+                    "value": "high",
+                    "label": "高中職"
+                  },
+                  {
+                    "field": "semesterScore",
+                    "op": "gte",
+                    "value": 82,
+                    "label": "114-2 平均至少82分",
+                    "period": "114-2"
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "field": "level",
+                    "op": "in",
+                    "value": [
+                      "university",
+                      "junior"
+                    ],
+                    "label": "大專院校"
+                  },
+                  {
+                    "field": "semesterScore",
+                    "op": "gte",
+                    "value": 85,
+                    "label": "114-2 平均至少85分",
+                    "period": "114-2"
+                  },
+                  {
+                    "field": "extra:daya:credits",
+                    "op": "gte",
+                    "value": 15,
+                    "label": "114-2 修習至少15學分"
+                  }
+                ]
+              }
+            ],
+            "label": "高中職或大專對應標準擇一符合"
+          }
+        ]
+      },
+      "documents": [
+        {
+          "key": "daya-application",
+          "name": "申請書",
+          "detail": "申請書（含注意事項）"
+        },
+        {
+          "key": "transcript-114-2",
+          "name": "114-2 成績單影本",
+          "detail": "請附對應學期，不以全學年平均取代。"
+        },
+        {
+          "key": "household-book",
+          "name": "戶口名簿影本",
+          "detail": "核對戶籍。"
+        }
+      ],
+      "documentQuestions": [],
+      "methods": [
+        {
+          "label": "至區公所申請",
+          "detail": "大雅區公所1樓人文課",
+          "url": "https://www.daya.taichung.gov.tw/982760/982764/982772/4040730"
+        }
+      ],
+      "contact": "04-25663316 #277",
+      "notes": [
+        "名稱期別不等於收件學期，不可用名稱直接排除。"
+      ],
+      "sources": [
+        {
+          "id": "v4-daya-114-2",
+          "name": "臺中市大雅區公所",
+          "url": "https://www.daya.taichung.gov.tw/982760/982764/982772/4040730",
+          "approvedHash": null
+        }
+      ],
+      "unmodeledConditions": [
+        "尚未核對申請書PDF全部注意事項及排除規定。"
+      ],
+      "questions": [
+        {
+          "field": "extra:daya:credits",
+          "type": "number",
+          "label": "114-2 修習學分數（大專組）",
+          "revision": "2026-09-19",
+          "sourceUrl": "https://www.daya.taichung.gov.tw/982760/982764/982772/4040730",
+          "min": 0,
+          "max": 60,
+          "step": 0.5
+        }
+      ],
+      "routes": [
+        {
+          "id": "school",
+          "kind": "school",
+          "label": "校內申請",
+          "availability": "not_applicable",
+          "deadline": null,
+          "precision": "date",
+          "note": "本公告由區公所受理，未提供校內代送時限。",
+          "url": "https://www.daya.taichung.gov.tw/982760/982764/982772/4040730"
+        },
+        {
+          "id": "direct",
+          "kind": "direct",
+          "label": "自行申請（官方時限）",
+          "availability": "allowed",
+          "start": "2026-09-14T00:00:00+08:00",
+          "deadline": "2026-09-24T23:59:59+08:00",
+          "precision": "date",
+          "note": "大雅區公所1樓人文課受理；日期未載鐘點，不表示收件至午夜。",
+          "url": "https://www.daya.taichung.gov.tw/982760/982764/982772/4040730",
+          "method": "大雅區公所1樓人文課"
+        }
+      ],
+      "lastFetchWarning": "One or more sources could not be checked.",
+      "awardPeriodLabel": "114 學年度第 2 學期",
+      "reviewReason": "公告已取得，但申請書注意事項尚未完整核對。"
+    }
+  ]
+}

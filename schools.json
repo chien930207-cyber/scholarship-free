@@ -1,0 +1,1254 @@
+{
+  "schemaVersion": 3,
+  "cacheHours": 6,
+  "schools": [
+    {
+      "id": "nccu",
+      "name": "國立政治大學",
+      "aliases": [
+        "政大",
+        "政治大學",
+        "NCCU"
+      ],
+      "sourceIds": [
+        "v9-nccu-scholarships",
+        "nccu-aid",
+        "v9-nccu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.nccu.edu.tw/",
+      "officialDomains": [
+        "nccu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "nthu",
+      "name": "國立清華大學",
+      "aliases": [
+        "清大",
+        "清華大學",
+        "NTHU"
+      ],
+      "sourceIds": [
+        "v9-nthu-scholarships",
+        "nthu-chem",
+        "v7-input-44",
+        "v9-nthu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.nthu.edu.tw/",
+      "officialDomains": [
+        "nthu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ntu",
+      "name": "國立臺灣大學",
+      "aliases": [
+        "臺大",
+        "台大",
+        "臺灣大學",
+        "台灣大學",
+        "NTU"
+      ],
+      "sourceIds": [
+        "ntu-list",
+        "ntu-stat",
+        "v7-input-03",
+        "v7-input-05",
+        "v7-input-06",
+        "v7-input-25",
+        "v9-ntu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.ntu.edu.tw/",
+      "officialDomains": [
+        "ntu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ntnu",
+      "name": "國立臺灣師範大學",
+      "aliases": [
+        "師大",
+        "臺師大",
+        "台師大",
+        "臺灣師範大學",
+        "台灣師範大學",
+        "NTNU"
+      ],
+      "sourceIds": [
+        "v9-ntnu-scholarships",
+        "v9-ntnu-homepage"
+      ],
+      "officialUrl": "https://www.ntnu.edu.tw/",
+      "officialDomains": [
+        "ntnu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ncku",
+      "name": "國立成功大學",
+      "aliases": [
+        "成大",
+        "成功大學",
+        "NCKU"
+      ],
+      "sourceIds": [
+        "v9-ncku-scholarships",
+        "v9-ncku-homepage"
+      ],
+      "officialUrl": "https://web.ncku.edu.tw/",
+      "officialDomains": [
+        "ncku.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "nchu",
+      "name": "國立中興大學",
+      "aliases": [
+        "中興大學",
+        "中興",
+        "興大",
+        "NCHU"
+      ],
+      "sourceIds": [
+        "v9-nchu-scholarships",
+        "v7-input-07",
+        "v7-detail-a0eb0607479d",
+        "v9-nchu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.nchu.edu.tw/",
+      "officialDomains": [
+        "nchu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "nycu",
+      "name": "國立陽明交通大學",
+      "aliases": [
+        "交大",
+        "陽明交大",
+        "陽明交通大學",
+        "交通大學",
+        "國立交通大學",
+        "陽明大學",
+        "國立陽明大學",
+        "NYCU",
+        "NCTU"
+      ],
+      "sourceIds": [
+        "v9-nycu-scholarships2",
+        "v9-nycu-scholarships",
+        "v9-nycu-homepage"
+      ],
+      "officialUrl": "https://www.nycu.edu.tw/",
+      "officialDomains": [
+        "nycu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ncu",
+      "name": "國立中央大學",
+      "aliases": [
+        "中央",
+        "中大",
+        "中央大學",
+        "NCU"
+      ],
+      "sourceIds": [
+        "v9-ncu-scholarships",
+        "v9-ncu-homepage"
+      ],
+      "officialUrl": "https://www.ncu.edu.tw/",
+      "officialDomains": [
+        "ncu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "nsysu",
+      "name": "國立中山大學",
+      "aliases": [
+        "中山",
+        "中山大學",
+        "NSYSU"
+      ],
+      "sourceIds": [
+        "v9-nsysu-scholarships",
+        "v9-nsysu-homepage"
+      ],
+      "officialUrl": "https://www.nsysu.edu.tw/",
+      "officialDomains": [
+        "nsysu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ntou",
+      "name": "國立臺灣海洋大學",
+      "aliases": [
+        "海大",
+        "臺灣海洋大學",
+        "台灣海洋大學",
+        "NTOU"
+      ],
+      "sourceIds": [
+        "v9-ntou-homepage"
+      ],
+      "officialUrl": "https://www.ntou.edu.tw/",
+      "officialDomains": [
+        "ntou.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ccu",
+      "name": "國立中正大學",
+      "aliases": [
+        "中正",
+        "中正大學",
+        "CCU"
+      ],
+      "sourceIds": [
+        "v9-ccu-scholarships",
+        "v9-ccu-homepage"
+      ],
+      "officialUrl": "https://www.ccu.edu.tw/",
+      "officialDomains": [
+        "ccu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "nknu",
+      "name": "國立高雄師範大學",
+      "aliases": [
+        "高師大",
+        "高雄師範大學",
+        "NKNU"
+      ],
+      "sourceIds": [
+        "v9-nknu-homepage"
+      ],
+      "officialUrl": "https://www.nknu.edu.tw/",
+      "officialDomains": [
+        "nknu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ncue",
+      "name": "國立彰化師範大學",
+      "aliases": [
+        "彰師大",
+        "彰化師範大學",
+        "NCUE"
+      ],
+      "sourceIds": [
+        "v9-ncue-scholarships",
+        "v9-ncue-homepage"
+      ],
+      "officialUrl": "https://www.ncue.edu.tw/",
+      "officialDomains": [
+        "ncue.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ntpu",
+      "name": "國立臺北大學",
+      "aliases": [
+        "北大",
+        "臺北大學",
+        "台北大學",
+        "NTPU"
+      ],
+      "sourceIds": [
+        "v9-ntpu-homepage"
+      ],
+      "officialUrl": "https://www.ntpu.edu.tw/",
+      "officialDomains": [
+        "ntpu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ncyu",
+      "name": "國立嘉義大學",
+      "aliases": [
+        "嘉義大學",
+        "嘉大",
+        "NCYU"
+      ],
+      "sourceIds": [
+        "v7-input-23",
+        "v9-ncyu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.ncyu.edu.tw/",
+      "officialDomains": [
+        "ncyu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nuk",
+      "name": "國立高雄大學",
+      "aliases": [
+        "高大",
+        "高雄大學",
+        "NUK"
+      ],
+      "sourceIds": [
+        "v9-nuk-homepage"
+      ],
+      "officialUrl": "https://www.nuk.edu.tw/",
+      "officialDomains": [
+        "nuk.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ndhu",
+      "name": "國立東華大學",
+      "aliases": [
+        "東華大學",
+        "東華",
+        "NDHU"
+      ],
+      "sourceIds": [
+        "v7-input-41",
+        "v9-ndhu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.ndhu.edu.tw/",
+      "officialDomains": [
+        "ndhu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ncnu",
+      "name": "國立暨南國際大學",
+      "aliases": [
+        "暨大",
+        "暨南大學",
+        "暨南國際大學",
+        "NCNU"
+      ],
+      "sourceIds": [
+        "v9-ncnu-homepage"
+      ],
+      "officialUrl": "https://www.ncnu.edu.tw/",
+      "officialDomains": [
+        "ncnu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntust",
+      "name": "國立臺灣科技大學",
+      "aliases": [
+        "臺科大",
+        "台科大",
+        "台科",
+        "臺科",
+        "台灣科技大學",
+        "臺灣科技大學",
+        "NTUST",
+        "Taiwan Tech"
+      ],
+      "sourceIds": [
+        "v9-ntust-scholarships",
+        "v7-input-13",
+        "v9-ntust-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.ntust.edu.tw/",
+      "officialDomains": [
+        "ntust.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "yuntech",
+      "name": "國立雲林科技大學",
+      "aliases": [
+        "雲科",
+        "雲科大",
+        "雲林科技大學",
+        "YunTech"
+      ],
+      "sourceIds": [
+        "v9-yuntech-homepage"
+      ],
+      "officialUrl": "https://www.yuntech.edu.tw/",
+      "officialDomains": [
+        "yuntech.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "npust",
+      "name": "國立屏東科技大學",
+      "aliases": [
+        "屏科大",
+        "屏東科技大學",
+        "屏科",
+        "NPUST"
+      ],
+      "sourceIds": [
+        "v9-npust-scholarships",
+        "npust",
+        "v9-npust-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.npust.edu.tw/",
+      "officialDomains": [
+        "npust.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ntut",
+      "name": "國立臺北科技大學",
+      "aliases": [
+        "北科大",
+        "臺北科技大學",
+        "台北科技大學",
+        "北科",
+        "NTUT",
+        "Taipei Tech"
+      ],
+      "sourceIds": [
+        "ntut",
+        "ntut-campus",
+        "ntut-external",
+        "v7-input-04",
+        "v9-ntut-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.ntut.edu.tw/",
+      "officialDomains": [
+        "ntut.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "tnua",
+      "name": "國立臺北藝術大學",
+      "aliases": [
+        "北藝大",
+        "台北藝術大學",
+        "臺北藝術大學",
+        "TNUA"
+      ],
+      "sourceIds": [
+        "v9-tnua-homepage"
+      ],
+      "officialUrl": "https://w3.tnua.edu.tw/",
+      "officialDomains": [
+        "tnua.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntua",
+      "name": "國立臺灣藝術大學",
+      "aliases": [
+        "台藝大",
+        "臺藝大",
+        "台灣藝術大學",
+        "臺灣藝術大學",
+        "NTUA"
+      ],
+      "sourceIds": [
+        "v9-ntua-homepage"
+      ],
+      "officialUrl": "https://www.ntua.edu.tw/",
+      "officialDomains": [
+        "ntua.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nttu",
+      "name": "國立臺東大學",
+      "aliases": [
+        "東大",
+        "台東大學",
+        "臺東大學",
+        "NTTU"
+      ],
+      "sourceIds": [
+        "v9-nttu-homepage"
+      ],
+      "officialUrl": "https://www.nttu.edu.tw/",
+      "officialDomains": [
+        "nttu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "niu",
+      "name": "國立宜蘭大學",
+      "aliases": [
+        "宜蘭大學",
+        "宜大",
+        "NIU"
+      ],
+      "sourceIds": [
+        "niu_low",
+        "niu_ht",
+        "v9-niu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.niu.edu.tw/",
+      "officialDomains": [
+        "niu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nuu",
+      "name": "國立聯合大學",
+      "aliases": [
+        "聯大",
+        "聯合大學",
+        "NUU"
+      ],
+      "sourceIds": [
+        "v9-nuu-homepage"
+      ],
+      "officialUrl": "https://www.nuu.edu.tw/",
+      "officialDomains": [
+        "nuu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nfu",
+      "name": "國立虎尾科技大學",
+      "aliases": [
+        "虎科",
+        "虎科大",
+        "虎尾科技大學",
+        "NFU"
+      ],
+      "sourceIds": [
+        "v9-nfu-homepage"
+      ],
+      "officialUrl": "https://www.nfu.edu.tw/",
+      "officialDomains": [
+        "nfu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "tnnua",
+      "name": "國立臺南藝術大學",
+      "aliases": [
+        "南藝大",
+        "台南藝術大學",
+        "臺南藝術大學",
+        "TNNUA"
+      ],
+      "sourceIds": [
+        "v9-tnnua-homepage"
+      ],
+      "officialUrl": "https://www.tnnua.edu.tw/",
+      "officialDomains": [
+        "tnnua.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nutn",
+      "name": "國立臺南大學",
+      "aliases": [
+        "南大",
+        "台南大學",
+        "臺南大學",
+        "NUTN"
+      ],
+      "sourceIds": [
+        "v9-nutn-homepage"
+      ],
+      "officialUrl": "https://www.nutn.edu.tw/",
+      "officialDomains": [
+        "nutn.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntue",
+      "name": "國立臺北教育大學",
+      "aliases": [
+        "北教大",
+        "國北教大",
+        "台北教育大學",
+        "臺北教育大學",
+        "NTUE"
+      ],
+      "sourceIds": [
+        "v9-ntue-homepage"
+      ],
+      "officialUrl": "https://www.ntue.edu.tw/",
+      "officialDomains": [
+        "ntue.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntcu",
+      "name": "國立臺中教育大學",
+      "aliases": [
+        "中教大",
+        "台中教育大學",
+        "臺中教育大學",
+        "NTCU"
+      ],
+      "sourceIds": [
+        "v9-ntcu-homepage"
+      ],
+      "officialUrl": "https://www.ntcu.edu.tw/",
+      "officialDomains": [
+        "ntcu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "npu",
+      "name": "國立澎湖科技大學",
+      "aliases": [
+        "澎科",
+        "澎科大",
+        "澎湖科技大學",
+        "NPU"
+      ],
+      "sourceIds": [
+        "v9-npu-homepage"
+      ],
+      "officialUrl": "https://www.npu.edu.tw/",
+      "officialDomains": [
+        "npu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ncut",
+      "name": "國立勤益科技大學",
+      "aliases": [
+        "勤益",
+        "勤益科大",
+        "勤益科技大學",
+        "NCUT"
+      ],
+      "sourceIds": [
+        "v9-ncut-homepage"
+      ],
+      "officialUrl": "https://web2.ncut.edu.tw/",
+      "officialDomains": [
+        "ncut.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntsu",
+      "name": "國立體育大學",
+      "aliases": [
+        "國體",
+        "國體大",
+        "體育大學",
+        "NTSU"
+      ],
+      "sourceIds": [
+        "v9-ntsu-homepage"
+      ],
+      "officialUrl": "https://www.ntsu.edu.tw/",
+      "officialDomains": [
+        "ntsu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntunhs",
+      "name": "國立臺北護理健康大學",
+      "aliases": [
+        "北護",
+        "北護大",
+        "台北護理健康大學",
+        "臺北護理健康大學",
+        "NTUNHS"
+      ],
+      "sourceIds": [
+        "v9-ntunhs-homepage"
+      ],
+      "officialUrl": "https://www.ntunhs.edu.tw/",
+      "officialDomains": [
+        "ntunhs.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nkuht",
+      "name": "國立高雄餐旅大學",
+      "aliases": [
+        "高餐大",
+        "高雄餐旅大學",
+        "高餐",
+        "NKUHT"
+      ],
+      "sourceIds": [
+        "nkuht",
+        "v9-nkuht-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.nkuht.edu.tw/",
+      "officialDomains": [
+        "nkuht.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nqu",
+      "name": "國立金門大學",
+      "aliases": [
+        "金大",
+        "金門大學",
+        "NQU"
+      ],
+      "sourceIds": [
+        "v9-nqu-homepage"
+      ],
+      "officialUrl": "https://www.nqu.edu.tw/",
+      "officialDomains": [
+        "nqu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "ntus",
+      "name": "國立臺灣體育運動大學",
+      "aliases": [
+        "台體",
+        "臺體",
+        "台體大",
+        "臺體大",
+        "台灣體育運動大學",
+        "臺灣體育運動大學",
+        "NTUS"
+      ],
+      "sourceIds": [
+        "v9-ntus-homepage"
+      ],
+      "officialUrl": "https://www.ntus.edu.tw/",
+      "officialDomains": [
+        "ntus.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nutc",
+      "name": "國立臺中科技大學",
+      "aliases": [
+        "中科大",
+        "台中科大",
+        "臺中科大",
+        "台中科技大學",
+        "臺中科技大學",
+        "NUTC"
+      ],
+      "sourceIds": [
+        "v9-nutc-scholarships",
+        "v9-nutc-homepage"
+      ],
+      "officialUrl": "https://www.nutc.edu.tw/",
+      "officialDomains": [
+        "nutc.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "scholarship-entry"
+    },
+    {
+      "id": "ntub",
+      "name": "國立臺北商業大學",
+      "aliases": [
+        "北商",
+        "北商大",
+        "台北商業大學",
+        "臺北商業大學",
+        "NTUB"
+      ],
+      "sourceIds": [
+        "v9-ntub-homepage"
+      ],
+      "officialUrl": "https://www.ntub.edu.tw/",
+      "officialDomains": [
+        "ntub.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nptu",
+      "name": "國立屏東大學",
+      "aliases": [
+        "屏東大學",
+        "屏大",
+        "NPTU"
+      ],
+      "sourceIds": [
+        "v7-input-08",
+        "v7-input-09",
+        "v9-nptu-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.nptu.edu.tw/",
+      "officialDomains": [
+        "nptu.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "general",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nkust",
+      "name": "國立高雄科技大學",
+      "aliases": [
+        "高科",
+        "高科大",
+        "高雄科技大學",
+        "高應大",
+        "高第一",
+        "高海科大",
+        "NKUST"
+      ],
+      "sourceIds": [
+        "v9-nkust-homepage"
+      ],
+      "officialUrl": "https://www.nkust.edu.tw/",
+      "officialDomains": [
+        "nkust.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "technology",
+      "registrySource": "https://udb.moe.edu.tw/udata/Index",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "nou",
+      "name": "國立空中大學",
+      "aliases": [
+        "空中大學",
+        "空大",
+        "NOU"
+      ],
+      "sourceIds": [
+        "v7-input-16",
+        "v9-nou-homepage"
+      ],
+      "note": "依完整校名與官方網域補查；校級入口優先，個別資格與收件日期依公告。",
+      "officialUrl": "https://www.nou.edu.tw/",
+      "officialDomains": [
+        "nou.edu.tw"
+      ],
+      "ownership": "national",
+      "schoolType": "open",
+      "registrySource": "https://anutw.org.tw/members.html",
+      "registryCheckedAt": "2026-09-19",
+      "scopeNote": "國立一般、科技及空中大學；不含軍警校院與專科。",
+      "coverageLevel": "official-domain"
+    },
+    {
+      "id": "stust",
+      "name": "南臺科技大學",
+      "aliases": [
+        "南台科技大學",
+        "南臺科大",
+        "南台科大"
+      ],
+      "sourceIds": [
+        "stust"
+      ],
+      "note": "僅目前登記之公開頁面，非全校所有學院系所；登入區不擷取。"
+    },
+    {
+      "id": "ngsh",
+      "name": "臺北市立南港高級中學",
+      "aliases": [
+        "南港高中",
+        "臺北市立南港高中"
+      ],
+      "sourceIds": [
+        "nangang"
+      ],
+      "note": "僅目前登記之公開頁面，非全校所有學院系所；登入區不擷取。"
+    },
+    {
+      "id": "ykvs",
+      "name": "新北市立鶯歌高級工商職業學校",
+      "aliases": [
+        "鶯歌工商"
+      ],
+      "sourceIds": [
+        "ykvs"
+      ],
+      "note": "僅目前登記之公開頁面，非全校所有學院系所；登入區不擷取。"
+    },
+    {
+      "id": "yzu",
+      "name": "元智大學",
+      "aliases": [
+        "元智"
+      ],
+      "sourceIds": [
+        "yzu-scholar"
+      ],
+      "note": "僅目前登記之公開頁面，非全校所有學院系所；登入區不擷取。"
+    },
+    {
+      "id": "hk",
+      "name": "弘光科技大學",
+      "aliases": [
+        "弘光科大",
+        "弘光"
+      ],
+      "sourceIds": [
+        "hk-scholar",
+        "v7-input-10",
+        "v7-input-11",
+        "v7-input-12"
+      ],
+      "note": "僅目前登記之公開頁面，非全校所有學院系所；登入區不擷取。"
+    },
+    {
+      "id": "knu",
+      "name": "開南大學",
+      "aliases": [
+        "開南"
+      ],
+      "sourceIds": [
+        "v7-input-01",
+        "v7-input-31"
+      ],
+      "note": "本批登記的公開來源；未讀取的頁面仍需重試，不代表全校覆蓋。"
+    },
+    {
+      "id": "utaipei",
+      "name": "臺北市立大學",
+      "aliases": [
+        "北市大",
+        "臺北市大"
+      ],
+      "sourceIds": [
+        "v7-input-14"
+      ],
+      "note": "本批登記的公開來源；未讀取的頁面仍需重試，不代表全校覆蓋。"
+    },
+    {
+      "id": "pccu",
+      "name": "中國文化大學",
+      "aliases": [
+        "文化大學",
+        "文化"
+      ],
+      "sourceIds": [
+        "v7-input-17"
+      ],
+      "note": "本批登記的公開來源；未讀取的頁面仍需重試，不代表全校覆蓋。"
+    },
+    {
+      "id": "hsc",
+      "name": "新生醫護管理專科學校",
+      "aliases": [
+        "新生醫專"
+      ],
+      "sourceIds": [
+        "v7-input-22"
+      ],
+      "note": "本批登記的公開來源；未讀取的頁面仍需重試，不代表全校覆蓋。"
+    },
+    {
+      "id": "meiho",
+      "name": "美和科技大學",
+      "aliases": [
+        "美和科大"
+      ],
+      "sourceIds": [
+        "v7-input-26"
+      ],
+      "note": "本批登記的公開來源；未讀取的頁面仍需重試，不代表全校覆蓋。"
+    },
+    {
+      "id": "kmu",
+      "name": "高雄醫學大學",
+      "aliases": [
+        "高醫"
+      ],
+      "sourceIds": [
+        "v7-input-34"
+      ],
+      "note": "本批登記的公開來源；未讀取的頁面仍需重試，不代表全校覆蓋。"
+    }
+  ],
+  "registry": {
+    "edition": "114學年度公開名錄＋國立空中大學",
+    "checkedAt": "2026-09-19",
+    "nationalCount": 44,
+    "scope": "國立一般、科技、空中大學（不含軍警校院、專科、學院）",
+    "references": [
+      "https://udb.moe.edu.tw/udata/Index",
+      "https://anutw.org.tw/members.html"
+    ],
+    "note": "44校有校名辨識與官方網域；其中15校另有本次登記的校級獎助入口。其餘可沿官網與網域搜尋，不表示全部獎學金已匯入。"
+  }
+}

@@ -1,0 +1,84 @@
+TAP version 13
+# (node:3225) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: time boundaries use Taipei calendar
+ok 1 - time boundaries use Taipei calendar
+  ---
+  duration_ms: 1.167273
+  type: 'test'
+  ...
+# Subtest: never accept grades or income in search requests
+ok 2 - never accept grades or income in search requests
+  ---
+  duration_ms: 0.390606
+  type: 'test'
+  ...
+# Subtest: public URLs and district sanitization
+ok 3 - public URLs and district sanitization
+  ---
+  duration_ms: 0.836355
+  type: 'test'
+  ...
+# Subtest: durable queue -> claim -> progress -> result
+ok 4 - durable queue -> claim -> progress -> result
+  ---
+  duration_ms: 29.230147
+  type: 'test'
+  ...
+# Subtest: same origin and internal authentication enforced
+ok 5 - same origin and internal authentication enforced
+  ---
+  duration_ms: 2.009987
+  type: 'test'
+  ...
+# Subtest: dataset write and read preserve structured data, no public private cache
+ok 6 - dataset write and read preserve structured data, no public private cache
+  ---
+  duration_ms: 3.234984
+  type: 'test'
+  ...
+# Subtest: daily job idempotent, forced run distinct
+ok 7 - daily job idempotent, forced run distinct
+  ---
+  duration_ms: 3.276465
+  type: 'test'
+  ...
+# Subtest: hard free quotas stop calls, not upgrade
+ok 8 - hard free quotas stop calls, not upgrade
+  ---
+  duration_ms: 2.314696
+  type: 'test'
+  ...
+# Subtest: per-IP limiter rejects repeated unique requests
+ok 9 - per-IP limiter rejects repeated unique requests
+  ---
+  duration_ms: 3.626241
+  type: 'test'
+  ...
+# Subtest: diagnostics retain actual results and status exposes version
+ok 10 - diagnostics retain actual results and status exposes version
+  ---
+  duration_ms: 1.764164
+  type: 'test'
+  ...
+# Subtest: AI request path invokes binding and consumes limit
+ok 11 - AI request path invokes binding and consumes limit
+  ---
+  duration_ms: 10.317346
+  type: 'test'
+  ...
+# Subtest: stale running job requeued and continued without losing it
+ok 12 - stale running job requeued and continued without losing it
+  ---
+  duration_ms: 2.523244
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 115.858756

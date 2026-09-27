@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 5,
+  "timezone": "Asia/Taipei",
+  "localTime": "12:00",
+  "cronUTC": "0 4 * * *",
+  "status": "not_started",
+  "lastAttemptAt": null,
+  "lastSuccessfulAt": null,
+  "lastPublishedAt": null,
+  "lastAttemptLocalDate": null
+}
