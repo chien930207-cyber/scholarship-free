@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+.local/
+.env
+.dev.vars
+__pycache__/
+*.pyc
+wrangler.json
+worker-secrets.json
+*.log
