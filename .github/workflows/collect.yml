@@ -1,6 +1,6 @@
 name: Website - Deploy and Update
 
-on:
+"on":
   workflow_dispatch:
     inputs:
       mode:
